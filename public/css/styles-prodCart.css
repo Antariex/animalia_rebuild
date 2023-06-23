@@ -1,0 +1,80 @@
+/* Estilos universales*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', serif;
+}
+
+:root {
+    --celeste: #54A4CB;
+    --verde: #674E3E;
+    --rosa: #C9914B;
+    --amarillo: #FFF159;
+    --blanco: #fff;
+    --gris: #3c3c3c;
+    --negro: #000;
+}
+
+/*Estilo main Fernando Carrito*/
+
+.titulares h1 {
+    text-align: center;
+    margin: 2px;
+    color: var(--rosa);
+    font-size: 24px;
+}
+
+ table, th, td {
+    border-bottom: 1px solid black;
+    border-collapse: collapse;
+   
+  }
+
+.thead{
+    font-weight: bold;
+    font-size: 14px;
+   }
+
+.tint img{
+    width: 80px;
+    padding: auto;
+    vertical-align: middle;
+   }
+
+.ttotal {
+    /*width: 80px;*/
+    padding: auto;
+    vertical-align: middle;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    height: 40px
+}
+
+.imagenCarrito img {
+     display: flex;
+    justify-content:right;
+    padding-right: 20px;
+  max-width: 100px;
+ }
+
+.butons {
+    display: flex;
+    justify-content:right;
+}
+
+.butons button {
+        padding: 8px 12px;
+        margin: 8px;
+        background-color: var(--verde);
+        border: 1px solid var(--verde);
+        font-family: 'Roboto', serif;
+        color: var(--blanco);
+        border-radius: 20px;
+    }
+button:hover {
+    background-color: var(--celeste);
+    border: 1px solid var(--celeste);
+    }

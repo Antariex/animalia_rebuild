@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', serif;
+}
+
+:root {
+  --celeste: #54A4CB;
+  --verde: #674E3E;
+  --rosa: #C9914B;
+  --amarillo: #FFF159;
+  --blanco: #fff;
+  --gris: #3c3c3c;
+  --negro: #000;
+}
+
+section {
+  padding: 5px;
+  margin: 5px;
+  text-align: center;
+}
+

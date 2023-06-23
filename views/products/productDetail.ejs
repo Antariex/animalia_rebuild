@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Metadatos: idiomas, adaptabilidad, estilos, tipografías, iconos y título -->
+    <link href="/css/styles-ProdDetails.css" rel="stylesheet">
+    <title><%= producto.name%></title>
+</head>
+
+<body>
+    <!-- Aquí comienza el header: logo, navbars y campo de búsqueda -->
+    <%- include('../partials/header.ejs') %>
+
+    <!-- Aquí comienza el main -->
+    <main>
+        <section>
+
+            <div class="container">
+                <div class="izquierda">
+                    <picture><img class="detail_prod__imag" src="<%=producto.image%>"> </picture>
+                    </div>
+                        <div>
+                        <h2 class="titulo"><%= producto.name%></h2>
+                        <br>
+                        <form action="./users/login" method="POST">
+                            <p class="precio">ANTES: $<%= producto.price%></p>
+                            <br>
+                            <div> <img src="/images/tarjetas.svg">
+                                <p>Múltiples medios de pago y promociones</p>
+                            </div>
+                            <hr>
+                            <br>
+                            <div class="cuadro">
+                                <p class="descuento">¡AHORA: $<%= producto.discount%>!</p>
+                                <p>Precio especial solo en Animalia</p>
+                            </div>
+                            <br>
+                            <hr>
+                            <p>Seleccione cantidad:</p>
+                            <select class="cantidad" name="Cantidad" id="Cantidad">
+                                    <option selected>Cantidad</option>
+                                    <option value="1">01</option>
+                                    <option value="2">02</option>
+                                    <option value="3">03</option>
+                                    <option value="4">04</option>
+                                    <option value="5">05</option>
+                                    <option value="6">10</option>
+                            </select>
+                            <br>
+                            <br>
+                <button class="button" type="submit"><a href="/">Agregar al carrito</a></button>
+                        </form>
+                        <br>
+                        <div class="listadebeneficios">
+                            
+                            <h4><img src="/images/camion.svg"> Envío a Domicilio</h4>
+                            <p>Envío gratis en compras mayores a $3500 en CABA y GBA.</p>
+                            <p>No aplica para envíos al Interior</p>
+                            <br>
+                            
+                            <h4><img src="/images/sucursal.svg"> Retiro en sucursal</h4>
+                            <p>Retirá sin cargo por tu sucursal preferida</p>
+                        </div>
+                </div>
+            </div>
+
+            <div class="detail__container">
+<h2 class="titulodescripcion">Descripción</h2>
+                    <p class="descripciones"><%= producto.description%></p>
+                </div>
+            </div>
+            </article>
+        </section>
+        </div>
+
+    </main>
+
+    <!-- Aquí comienza el footer: lista de correo, links de información y redes sociales -->
+    <%- include('../partials/footer.ejs') %>
+
+</body>
+
+</html>
