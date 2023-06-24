@@ -95,10 +95,27 @@
     background-color: var(--blanco);
     padding: 12px 10px 12px 12px;
     border: solid 1px var(--verde);
-    border-radius: 20px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-right: 0px;
+    margin-right: -4px;
     font: inherit;
     outline: var(--verde);
     color: var(--gris);
+}
+
+.navbarInferior span {
+    display: inline-block;
+    background-color: var(--blanco);
+    padding: 12px 10px 12px 12px;
+    border: solid 1px var(--verde);
+    border-left: 0px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    margin-left: -4;
+    font: inherit;
+    outline: var(--verde);
+    color: var(--verde);
 }
 
 .fa-magnifying-glass {
