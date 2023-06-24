@@ -52,5 +52,5 @@ $ nodemon app.js
 
 ```
 
-Hecho esto, podés abir tu navegador e ingresar a: `http://localhost:3000/` y ya podrás tener el sitio corriendo localmente en tu computadora.
+Hecho esto, podés abir tu navegador e ingresar a: `http://localhost:3000/` y ya tendrás el sitio corriendo localmente en tu computadora.
 <br>
