@@ -116,6 +116,7 @@
     font: inherit;
     outline: var(--verde);
     color: var(--verde);
+    cursor: pointer;
 }
 
 .fa-magnifying-glass {
