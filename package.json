@@ -1,6 +1,6 @@
 {
-  "name": "grupo3animalia",
-  "version": "1.0.0",
+  "name": "animalia",
+  "version": "2.0.0",
   "description": "Animalia, el mejor sitio para tus mascotas. E-commerce (pet-shop).",
   "main": "app.js",
   "scripts": {
@@ -9,17 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Antariex/grupo3Animalia.git"
+    "url": "git+https://github.com/Antariex/animalia_rebuild.git"
   },
   "keywords": [
     "Animalia"
   ],
-  "author": "Ariel Antequirea, Mariano Vélez, Maru Bruno, Fer Miguez",
+  "author": "Ariel Antequiera",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Antariex/grupo3Animalia/issues"
-  },
-  "homepage": "https://github.com/Antariex/grupo3Animalia#readme",
+  "homepage": "https://animalia-396f.onrender.com/",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "cookie-parser": "^1.4.6",
