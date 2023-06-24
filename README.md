@@ -22,14 +22,14 @@ Proyecto integrador iniciado durante el curso de Desarrollo Web Full Stack de Di
 Animalia es el e-commerce de un petshop orientado a fomentar el cuidado de las mascotas, a brindar servicios y soluciones con foco hacia la atención animal, estimulando la economía digital y de escala solidaria, apoyada en una logística responsable y eficiente.
 <br>
 <br>
-El público objetivo son los amantes de las mascotas, cuidadores, entrenadores de animales, instituciones con y sin fines de lucro que tengan como finalidad alimentar, protejer y dar un mundo de cariño y posibilidades para los animales domésticos.
+El público objetivo son los amantes de las mascotas, cuidadores, entrenadores de animales, instituciones con y sin fines de lucro que tengan como finalidad alimentar, protejer y dar un mundo de cariño y posibilidades para las mascotas.
 <br> 
 <br>
 > **Cuidar y querer a los animales es cuidar nuestro entorno, agradecer nuestro presente y valorar positivamente nuestro futuro.**
 <br>
 <h2>🛠️ 2. Elaboración del sitio</h2>  
   
-El website de Animalia fue desarrollado utilizando HTML5, CSS y JavaScript. Para la construcción y el diseño se utilizaron como referencia las siguientes webs:
+El website de Animalia fue desarrollado utilizando HTML5, CSS y JavaScript. Para la construcción y el diseño se utilizaron como referencias las siguientes webs:
 - www.veterinariasebastian.com  
 - www.petsmart.com  
 - www.miamipetconcierge.com  
@@ -45,7 +45,7 @@ $ git clone https://github.com/Antariex/animalia_rebuild.git
 
 # Entrar en VS Code (o algún otro IDE de tu preferencia).
 
-# Instalar las dependencias desde la terminal:
+# Instalar las dependencias:
 $ npm install
 
 # Ejecutar el servidor:
