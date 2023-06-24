@@ -64,8 +64,8 @@
 }
 
 .secciones img:hover {
-        transition: 0.5s;
-        transform: rotate(360deg);
+    transition: 0.5s;
+    transform: rotate(360deg);
 }
 
 .secciones ul {
@@ -287,7 +287,7 @@ article {
     font-weight: 350;
     height: 44px;
     border-radius: 6px;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 .card-body button:hover {
@@ -305,9 +305,9 @@ article {
     justify-content: center;
     max-width: 90%;
     margin: 0 auto;
-    }
-  
-  .categorias {
+}
+
+.categorias {
     background-color: var(--blanco);
     padding: 20px;
     border: 1px solid var(--celeste);
@@ -318,12 +318,12 @@ article {
     margin: 12px;
     gap: 4px;
     cursor: pointer;
-  }
+}
 
-  .categorias img {
+.categorias img {
     width: 55px;
     height: 55px;
-  }
+}
 
 .categorias:hover {
     background-color: var(--celeste);
@@ -364,53 +364,16 @@ article {
     letter-spacing: -.08rem;
 }
 
-.fotoRomero img{
-max-width: 310px;
-height: 232px;
-border-radius: 50%;
-padding-left: 16px;
--o-object-fit: cover;
-object-fit: cover;
--o-object-position: center;
-object-position: center;
-display: inline-block;
-}
-
-.up {
-    display: flex;
-    justify-content: right;
-    position: static;
-    bottom: 0;
-    right: 0;
-    opacity: 0.8;
-}
-
-.up button {
-    background-color: var(--celeste);
-    color: var(--blanco);
-    border: 1px solid var(--blanco);
-    outline: var(--blanco);
+.fotoRomero img {
+    max-width: 310px;
+    height: 232px;
     border-radius: 50%;
-    padding: 10px;
-    font-size: 20px;
-    font-weight: bold;
-    display: flex;
-    justify-content: right;
-    margin: 20px;
-    cursor: pointer;
-}
-
-.up button:hover {
-    color: var(--amarillo);
-    border: 1px solid var(--amarillo);
-}
-
-/* Estilos para el footer */
-
-footer {
-    background-color: var(--celeste);
-    color: var(--blanco);
-    font-size: 16px;
+    padding-left: 16px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
+    display: inline-block;
 }
 
 .newsletter {
@@ -450,32 +413,92 @@ footer {
     color: var(--amarillo)
 }
 
+
+/* Estilos para el footer */
+
+footer {
+    background-color: var(--celeste);
+    color: var(--blanco);
+    font-size: 16px;
+}
+
+.logoFooter {
+    width: 130px;
+    height: 116px;
+    margin-top: 12px;
+}
+
+.contacto,
+.ayuda, .nosotros {
+    text-align: left;
+}
+
+.redes {
+    text-align: center !important;
+}
+
 .enlaces {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
-.enlaces a, .legales a {
-    text-decoration: none;
-    color: var(--blanco);
-    margin: 11px;
-    padding: 1px;
+.enlaces span {
+    font-size: 16px;
+    font-weight: 550;
 }
 
-.enlaces a:hover, .legales a:hover {
+.enlaces a,
+.legales a {
+    text-decoration: none;
+    color: var(--blanco);
+}
+
+.enlaces a:hover,
+.legales a:hover {
     color: var(--amarillo);
 }
 
 .enlaces li {
-    padding: 5px;
+    padding: 7px 0px;
     list-style: none;
-    text-align: center;
+}
+
+.up {
+    display: flex;
+    justify-content: right;
+    position: static;
+    bottom: 20px;
+    right: 20px;
+    opacity: 0.8;
+    z-index: 9999;
+}
+
+.up button {
+    background-color: var(--celeste);
+    color: var(--blanco);
+    border: 1px var(--blanco);
+    outline: var(--blanco);
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: right;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.up button:hover {
+    color: var(--amarillo);
+    border: 1px var(--amarillo);
 }
 
 .legales {
     text-align: left;
     padding: 5px;
+    background-color: var(--gris);
+    font-size: 14px;
 }
 
 /* Estilos para diseño adaptativo */
@@ -491,12 +514,11 @@ footer {
         display: flex;
         flex-wrap: wrap;
         text-align: center;
-        }
+    }
 }
 
 /* tablet */
-@media (min-width: 768px) {
-}
+@media (min-width: 768px) {}
 
 /* desktop */
 @media (min-width: 1024px) {
