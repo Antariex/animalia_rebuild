@@ -22,7 +22,7 @@ Proyecto integrador iniciado durante el curso de Desarrollo Web Full Stack de Di
 Animalia es el e-commerce de un petshop orientado a fomentar el cuidado de las mascotas, a brindar servicios y soluciones con foco hacia la atención animal, estimulando la economía digital y de escala solidaria, apoyada en una logística responsable y eficiente.
 <br>
 <br>
-El público objetivo son los amantes de las mascotas, cuidadores, entrenadores de animales, instituciones con y sin fines de lucro que tengan como objetivo, alimentar, protejer y dar un mundo de cariño y posibilidades para los animales domésticos.
+El público objetivo son los amantes de las mascotas, cuidadores, entrenadores de animales, instituciones con y sin fines de lucro que tengan como finalidad alimentar, protejer y dar un mundo de cariño y posibilidades para los animales domésticos.
 <br> 
 <br>
 > **Cuidar y querer a los animales es cuidar nuestro entorno, agradecer nuestro presente y valorar positivamente nuestro futuro.**
