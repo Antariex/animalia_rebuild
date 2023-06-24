@@ -2,7 +2,7 @@
 🐶 🐱 🐦 🐭 🐟
 <br>
 <br>
-Visitar sitio: https://animalia-dh.herokuapp.com/
+Visitar sitio: https://animalia-396f.onrender.com/
 
 ## Tabla de Contenidos
 1. <a href="#-1-informaci%C3%B3n-general">Información general</a>  
@@ -16,16 +16,14 @@ Visitar sitio: https://animalia-dh.herokuapp.com/
 
 <h2>💻 1. Información general</h2>
 
-Proyecto integrador realizado durante el curso de Desarrollo Web Full Stack de Digital House: https://www.digitalhouse.com/ar/.
+Proyecto integrador iniciado durante el curso de Desarrollo Web Full Stack de Digital House: https://www.digitalhouse.com/ar/. Luego de algún tiempo de práctica tome esa base incial para continuar el desarrollo por mi cuenta, modificando vistas, agregando funcionalidades y complejizando el mismo.
 <br>
 <br>
 Animalia es el e-commerce de un petshop orientado a fomentar el cuidado de las mascotas, a brindar servicios y soluciones con foco hacia la atención animal, estimulando la economía digital y de escala solidaria, apoyada en una logística responsable y eficiente.
 <br>
 <br>
-Nuestro público target son todos aquellos pet lovers, cuidadores, entrenadores de animales, instituciones con y sin fines de lucro que tengan como objetivo, alimentar, cuidar y dar un mundo de posibilidades para aquellos animales que han nacido en circunstancias precarias o menos favorecidas, con menores recursos.
-<br>
-<br>
-Buscamos así crear soluciones reales para que tengan un entorno digno que les permita crecer y así poder contribuir y devolverles un poco de todo lo que ellos nos dan, que no es poco y se llama Amor Incondicional.  
+El público objetivo son los amantes de las mascotas, cuidadores, entrenadores de animales, instituciones con y sin fines de lucro que tengan como objetivo, alimentar, protejer y dar un mundo de cariño y posibilidades para los animales domésticos.
+<br> 
 <br>
 > **Cuidar y querer a los animales es cuidar nuestro entorno, agradecer nuestro presente y valorar positivamente nuestro futuro.**
 <br>
@@ -38,55 +36,22 @@ El website de Animalia fue desarrollado utilizando HTML5, CSS y JavaScript. Para
 - www.kiwoko.com  
 - www.natural-life.com.ar
 <br>
-Se puede ver el proceso, sprint tras sprint, en los tableros de trabajo (Trello) que se fueron utilizando para dividir y realizar las distintas tareas durante las consecutivas etapas de desarrollo: https://trello.com/b/co96aUDo/animalia.
-<br>
 <br>
 <h2>👷 3. Clonar Animalia en tu PC</h2>
 
 ```bash
 # Clonar el repositorio:
-$ git clone https://github.com/Antariex/grupo3Animalia.git
+$ git clone https://github.com/Antariex/animalia_rebuild.git
 
 # Entrar en VS Code (o algún otro IDE de tu preferencia).
 
-# Ejecutar o crear un servidor.
+# Instalar las dependencias desde la terminal:
+$ npm install
+
+# Ejecutar el servidor:
+$ nodemon app.js
 
 ```
 
-Hecho esto, podés abir tu navegador e ingresar a: `http://localhost:3000/` o en otro puerto que elijas (el mismo del paso anterior).
+Hecho esto, podés abir tu navegador e ingresar a: `http://localhost:3000/` y ya podrás tener el sitio corriendo localmente en tu computadora.
 <br>
-<br>
-<h2>:mortar_board: 4. Autores</h2>
-
-<table>
-    <tr>
-        <td align="center">
-            <a href="https://github.com/antariex">
-                <img src="https://avatars.githubusercontent.com/u/100479971?v=4" width="150px;" alt="Imagen de Ariel Antequiera" />
-                <br />
-                <sub><b>Ariel Antequiera</b></sub>
-            </a>
-        </td>
-        <td align="center">
-            <a href="https://github.com/Marianoide">
-                <img src="https://avatars.githubusercontent.com/u/102563023?v=4" width="150px;" alt="Imagen de Mariano Vélez Miranda" />
-                <br />
-                <sub><b>Mariano Vélez Miranda</b></sub>
-            </a>
-        </td>
-        <td align="center">
-            <a href="https://github.com/FernandoMig">
-                <img src="https://avatars.githubusercontent.com/u/102432412?v=4" width="150px;" alt="Imagen de Fernando Miguez" />
-                <br />
-                <sub><b>Fernando Miguez</b></sub>
-            </a>
-        </td>
-        <td align="center">
-            <a href="https://github.com/MaruBruno">
-                <img src="https://avatars.githubusercontent.com/u/102558669?v=4" width="150px;" alt="Imagen de Maria Eugenia Bruno" />
-                <br />
-                <sub><b>Maria Eugenia Bruno</b></sub>
-            </a>
-        </td>
-   </tr>
-</table>
