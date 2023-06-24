@@ -8,7 +8,6 @@ Visitar sitio: https://animalia-396f.onrender.com/
 1. <a href="#-1-informaci%C3%B3n-general">Información general</a>  
 2. <a href="#%EF%B8%8F-2-elaboraci%C3%B3n-del-sitio">Elaboración del sitio</a>  
 3. <a href="#-3-clonar-animalia-en-tu-pc">Clonar Animalia en tu PC</a>
-4. <a href="#mortar_board-4-autores">Autores</a>  
   
   ---  
 
