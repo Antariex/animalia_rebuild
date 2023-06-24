@@ -1,120 +1,209 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
+  <head>
     <!-- Metadatos: idiomas, adaptabilidad, estilos, tipografías, iconos y título -->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/css/styles.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <link rel="icon" href="/images/icon.png">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/css/styles.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="icon" href="/images/icon.png" />
     <title>Animalia - Lo mejor para tus mascotas</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  </head>
 
-<body>
+  <body>
     <!-- Aquí comienza el header: logo, navbars y campo de búsqueda -->
     <%- include('partials/header.ejs') %>
 
     <!-- Aquí comienza el main: banner, slider con ofertas, cards de productos y enlaces varios -->
     <main>
-        <div class="slide">
-            <div class="slide-inner">
-                <input class="slide-open" type="radio" id="slide-1" name="slide" aria-hidden="true" hidden=""
-                    checked="checked">
-                <div class="slide-item">
-                    <img src="/images/slider1.png">
-                </div>
-                <input class="slide-open" type="radio" id="slide-2" name="slide" aria-hidden="true" hidden="">
-                <div class="slide-item">
-                    <img src="/images/slider2.png">
-                </div>
-                <input class="slide-open" type="radio" id="slide-3" name="slide" aria-hidden="true" hidden="">
-                <div class="slide-item">
-                    <img src="/images/slider3.jpg">
-                </div>
-                <label for="slide-3" class="slide-control prev control-1">‹</label>
-                <label for="slide-2" class="slide-control next control-1">›</label>
-                <label for="slide-1" class="slide-control prev control-2">‹</label>
-                <label for="slide-3" class="slide-control next control-2">›</label>
-                <label for="slide-2" class="slide-control prev control-3">‹</label>
-                <label for="slide-1" class="slide-control next control-3">›</label>
-            </div>
-
-            <br>
-            <br>
-
-            <div class="banner"><img src="/images/banner2.png"></div>
-
+      <div class="slide">
+        <div class="slide-inner">
+          <input
+            class="slide-open"
+            type="radio"
+            id="slide-1"
+            name="slide"
+            aria-hidden="true"
+            hidden=""
+            checked="checked"
+          />
+          <div class="slide-item">
+            <img src="/images/slider1.png" />
+          </div>
+          <input
+            class="slide-open"
+            type="radio"
+            id="slide-2"
+            name="slide"
+            aria-hidden="true"
+            hidden=""
+          />
+          <div class="slide-item">
+            <img src="/images/slider2.png" />
+          </div>
+          <input
+            class="slide-open"
+            type="radio"
+            id="slide-3"
+            name="slide"
+            aria-hidden="true"
+            hidden=""
+          />
+          <div class="slide-item">
+            <img src="/images/slider3.jpg" />
+          </div>
+          <label for="slide-3" class="slide-control prev control-1">‹</label>
+          <label for="slide-2" class="slide-control next control-1">›</label>
+          <label for="slide-1" class="slide-control prev control-2">‹</label>
+          <label for="slide-3" class="slide-control next control-2">›</label>
+          <label for="slide-2" class="slide-control prev control-3">‹</label>
+          <label for="slide-1" class="slide-control next control-3">›</label>
         </div>
 
-        <div class="beneficios">
-            <div> <img src="/images/tarjetas.svg">
-                <p>Múltiples medios de pago y promociones</p>
-            </div>
-            <div> <img src="/images/sucursal.svg">
-                <p>Retiro con descuentos en cualquiera de nuestras sucursales</p>
-            </div>
-            <div> <img src="/images/camion.svg">
-                <p>Envíos en el día para toda CABA y GBA</p>
-            </div>
+        <br />
+        <br />
+
+        <div class="banner"><img src="/images/banner2.png" /></div>
+      </div>
+
+      <div class="beneficios">
+        <div>
+          <img src="/images/tarjetas.svg" />
+          <p>Múltiples medios de pago y promociones</p>
         </div>
-
-        <br>
-
-        <section>
-            <h3 class="titulares">¡No te pierdas nuestras ofertas!</h3>
-
-            <% products.forEach(product => { %>
-            <article>
-                <div class="card">
-                    <a href="/products/productDetail/<%=product.id%>">
-                   <img src="<%=product.image%>" title="<%=product.name%>"></a>
-                    <div class="card-body">
-                        <a href="/products/productDetail/<%=product.id%>">
-                            <p class="nombres"><%=product.name%></p></a>
-                        <p class="precios">ANTES: $<%=product.price%></p>
-                        <p class="descuentos">¡AHORA: $<%=product.discount%>!</p>
-                        <button>Agregar al carrito</button>
-                    </div>
-                </div>
-            </article>
-            <% }) %> 
-
-        </section>
-        <br>
-        <div class="newsletter">
-            <p><i class="fa-solid fa-envelope">&nbsp</i>Suscríbite para recibir ofertas y novedades:</p>
-
-            <form action="#" method="GET">
-                <input type="text" placeholder="Nombre completo">
-                &nbsp
-                <input type="email" placeholder="Dirección de email">
-                <button type="submit" value="Submit">Enviar</button>
-            </form>
-
+        <div>
+          <img src="/images/sucursal.svg" />
+          <p>Retiro con descuentos en cualquiera de nuestras sucursales</p>
         </div>
+        <div>
+          <img src="/images/camion.svg" />
+          <p>Envíos en el día para toda CABA y GBA</p>
+        </div>
+      </div>
 
+      <br />
+
+      <section>
+        <h3 class="titulares">¡No te pierdas nuestras ofertas!</h3>
+
+        <% products.forEach(product=> { %>
+        <article>
+          <div class="card">
+            <a href="/products/productDetail/<%=product.id%>">
+              <img src="<%=product.image%>" title="<%=product.name%>"
+            /></a>
+            <div class="card-body">
+              <a href="/products/productDetail/<%=product.id%>">
+                <p class="nombres"><%=product.name%></p>
+              </a>
+              <p class="precios">ANTES: $<%=product.price%></p>
+              <p class="descuentos">¡AHORA: $<%=product.discount%>!</p>
+              <button>Agregar al carrito</button>
+            </div>
+          </div>
+        </article>
+        <% }) %>
         <br>
         <br>
-
         <div class="consejo">
-            <h3>EL CONSEJO DEL DR. ROMERO</h3>
-            <img src="/images/drromero.jpg">
-            <p> ¨Respetar e incentivar su descanso de la misma manera que uno tiene su propia rutina, los animales
-                también tienen sus tiempos de descanso. Es importante respetarlos en el espacio de convivencia, y que
-                puedan relajarse y recargar energías para poder seguir jugando.¨</p>
+            <div class="consejoRomero">
+                
+                
+                    <h2><span class="material-symbols-outlined">
+                        pets
+                        </span> EL CONSEJO DEL DR. ROMERO</h2>
+                <br>
+                <p>
+                    <script language="javascript">
+                        texto_aleatorio();
+                    
+                        function texto_aleatorio() {
+                            var textos = [
+                                "Respetar e incentivar su descanso de la misma manera que uno tiene su propia rutina, los animales también tienen sus tiempos de descanso. Es importante respetarlos en el espacio de convivencia, y que puedan relajarse y recargar energías para poder seguir jugando.",
+                                "Nunca le cortes el pelo a tu perro, ni siquiera en verano, porque el pelo del perro produce un microclima que permite que el animal pueda soportar mejor las temperaturas del ambiente.",
+                                "Un animal feliz es un animal bien alimentado. Siempre dale alimentos balanceados adquiridos en tu veterinaria de confianza. El mejor alimento no es ni el más barato ni el más caro, sino el que mejor cubre las necesidades de tus mascotas.",
+                                "Mito: La castración engorda. No es así, pero una vez que nuestra mascota haya sido castrada, debemos disminuir su carga calórica, porque hay una mayor tendencia a disminuir su actividad.",
+                                "Los animales establecen con nosotros vínculos afectivos diferenciales. Si los dejamos mucho tiempo solos, eso les puede generar ansiedad (que van a expresar a través de conductas que nos llamarán la atención)."
+                            ];
+                    
+                            var aleat = Math.floor(Math.random() * textos.length);
+                    
+                            if (aleat >= 0 && aleat < textos.length) {
+                                document.write(textos[aleat]);
+                            } else {
+                                document.write("Texto no disponible");
+                            }
+                        }
+                    </script>
+                    
+                    </p>
+            </div>
+            <div class="fotoRomero"><img src="/images/drromero.jpg" /></div>
+          </div>
+        <br>
+        <br>
+        <div>
+          <h3 class="titulares">Productos para todas tus mascotas</h3>
         </div>
-        <br>
-        <br>
 
+        <div class="categoriasPopulares">
+          <div class="categorias">
+            <img src="images/icons/icon-menu-perros-blue.png" alt="" />
+            <p>PERROS</p>
+          </div>
+          <div class="categorias">
+            <img src="images/icons/icon-menu-gatos-blue.png" alt="" />
+            <p>GATOS</p>
+          </div>
+          <div class="categorias">
+            <img src="images/icons/icon-menu-aves-blue.png" alt="" />
+            <p>AVES</p>
+          </div>
+          <div class="categorias">
+            <img src="images/icons/icon-menu-roedores-blue.png" alt="" />
+            <p>ROEDORES</p>
+          </div>
+          <div class="categorias">
+            <img src="images/icons/icon-menu-peces-blue.png" alt="" />
+            <p>PECES</p>
+          </div>
+          <div class="categorias">
+            <img src="images/icons/icon-menu-ofertas-blue.png" alt="" />
+            <p>OFERTAS</p>
+          </div>
+        </div>
+      </section>
+      <br />
+      <div class="newsletter">
+        <p>
+          <i class="fa-solid fa-envelope">&nbsp</i>Suscríbite para recibir
+          ofertas y novedades:
+        </p>
+
+        <form action="#" method="GET">
+          <input type="text" placeholder="Nombre completo" />
+          &nbsp
+          <input type="email" placeholder="Dirección de email" />
+          <button type="submit" value="Submit">Enviar</button>
+        </form>
+      </div>
+
+      <br />
+      <br />
     </main>
 
     <!-- Aquí comienza el footer: lista de correo, links de información y redes sociales -->
     <%- include('partials/footer.ejs') %>
-</body>
-
+  </body>
 </html>
