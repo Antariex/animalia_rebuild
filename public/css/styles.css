@@ -483,7 +483,7 @@ article {
     display: block;
     width: 100%;
     padding: 5px;
-    text-align: justify;
+    text-align: left;
     line-height: 1.5;
     margin-bottom: 8px;
 }
