@@ -148,7 +148,6 @@
     justify-content: center;
     margin: 0 auto;
     padding-top: 3px;
-    margin-top: 8px;
 }
 
 .beneficios {
@@ -192,6 +191,7 @@
     max-height: 290px;
     max-width: 100%;
     margin: 0 auto;
+    margin-top: 8px;
 }
 
 .slide-control {
@@ -645,6 +645,17 @@ footer {
 /* Estilos para diseño adaptativo */
 
 /* mobile */
+
+@media (min-width:320px) and (max-width:374px) {
+        .banner img {
+        display: flex;
+        max-width: 100%;
+        justify-content: center;
+        margin: 0 auto;
+        padding-top: 3px;
+        margin-top: 8px;
+    }
+}
 
 @media (max-width: 767px) {
     .consejo {
