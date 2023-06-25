@@ -1,68 +1,40 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <!-- Metadatos: idiomas, adaptabilidad, estilos, tipografías, iconos y título -->
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="/css/styles.css" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    />
-    <link rel="icon" href="/images/icon.png" />
-    <title>Animalia - Lo mejor para tus mascotas</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-    />
-  </head>
 
-  <body>
-    <!-- Aquí comienza el header: logo, navbars y campo de búsqueda -->
-    <%- include('partials/header.ejs') %>
+<head>
+  <!-- Metadatos: idiomas, adaptabilidad, estilos, tipografías, iconos y título -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="/css/styles.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+  <link rel="icon" href="/images/icon.png" />
+  <title>Animalia - Lo mejor para tus mascotas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+  <!-- Aquí comienza el header: logo, navbars y campo de búsqueda -->
+  <%- include('partials/header.ejs') %>
 
     <!-- Aquí comienza el main: banner, slider con ofertas, cards de productos y enlaces varios -->
     <main>
       <div class="slide">
         <div class="slide-inner">
-          <input
-            class="slide-open"
-            type="radio"
-            id="slide-1"
-            name="slide"
-            aria-hidden="true"
-            hidden=""
-            checked="checked"
-          />
+          <input class="slide-open" type="radio" id="slide-1" name="slide" aria-hidden="true" hidden=""
+            checked="checked" />
           <div class="slide-item">
             <img src="/images/slider1.png" />
           </div>
-          <input
-            class="slide-open"
-            type="radio"
-            id="slide-2"
-            name="slide"
-            aria-hidden="true"
-            hidden=""
-          />
+          <input class="slide-open" type="radio" id="slide-2" name="slide" aria-hidden="true" hidden="" />
           <div class="slide-item">
             <img src="/images/slider2.png" />
           </div>
-          <input
-            class="slide-open"
-            type="radio"
-            id="slide-3"
-            name="slide"
-            aria-hidden="true"
-            hidden=""
-          />
+          <input class="slide-open" type="radio" id="slide-3" name="slide" aria-hidden="true" hidden="" />
           <div class="slide-item">
             <img src="/images/slider3.jpg" />
           </div>
@@ -101,79 +73,77 @@
         <h3 class="titulares">¡No te pierdas nuestras ofertas!</h3>
 
         <% products.forEach(product=> { %>
-        <article>
-          <div class="card">
-            <a href="/products/productDetail/<%=product.id%>">
-              <img src="<%=product.image%>" title="<%=product.name%>"
-            /></a>
-            <div class="card-body">
+          <article>
+            <div class="card">
               <a href="/products/productDetail/<%=product.id%>">
-                <p class="nombres"><%=product.name%></p>
-              </a>
-              <p class="precios">ANTES: $<%=product.price%></p>
-              <p class="descuentos">¡AHORA: $<%=product.discount%>!</p>
-              <button>Agregar al carrito</button>
+                <img src="<%=product.image%>" title="<%=product.name%>" /></a>
+              <div class="card-body">
+                <a href="/products/productDetail/<%=product.id%>">
+                  <p class="nombres">
+                    <%=product.name%>
+                  </p>
+                </a>
+                <p class="precios">ANTES: $<%=product.price%>
+                </p>
+                <p class="descuentos">¡AHORA: $<%=product.discount%>!</p>
+                <button>Agregar al carrito</button>
+              </div>
             </div>
-          </div>
-        </article>
-        <% }) %>
-        <br />
-        <br />
-        <br />
-        <div class="videoContainer">
-          <iframe
-            width="100%"
-            height="355"
-            src="https://www.youtube.com/embed/wKb3ShuHF7U"
-            title="Video: De gatito a un gato adulto saludable"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-          ></iframe>
-          <div class="videoTexto">
-            <h2>De gatito a un gato adulto saludable</h2>
-            <img src="/images/kitten.png" alt="Gatito" class="gatito" />
+          </article>
+          <% }) %>
             <br />
-            <p>
-              Durante los primeros meses de vida, tu gatito pasará por una
-              transformación sorprendente. Los alimentos de Royal Canin para
-              gatitos ofrecen una nutrición específica para sus necesidades
-              únicas en este momento vital.
-            </p>
-          </div>
-        </div>
-        <br />
-        <br />
-        <div>
-          <h3 class="titulares">Productos para todas las mascotas</h3>
-        </div>
+            <br />
+            <br />
+            <div class="videoContainer">
+              
+              <iframe width="100%" height="355" src="https://www.youtube.com/embed/wKb3ShuHF7U"
+                title="Video: De gatito a un gato adulto saludable" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+              <div class="videoTexto">
+                <h2>De gatito a un gato adulto saludable</h2>
+                <img src="/images/kitten.png" alt="Gatito" class="gatito" />
+                <br />
+                <p>
+                  Durante los primeros meses de vida, tu gatito pasará por una
+                  transformación sorprendente. Los alimentos de Royal Canin para
+                  gatitos ofrecen una nutrición específica para sus necesidades
+                  únicas en este momento vital.
+                </p>
+              </div>
+            </div>
+            <br />
+            <br />
+            <div>
+              <h3 class="titulares tituloCategorias">Productos para todas las mascotas</h3>
+            </div>
 
-        <div class="categoriasPopulares">
-          <div class="categorias">
-            <img src="images/icons/icon-menu-perros-blue.png" alt="" />
-            <p>PERROS</p>
-          </div>
-          <div class="categorias">
-            <img src="images/icons/icon-menu-gatos-blue.png" alt="" />
-            <p>GATOS</p>
-          </div>
-          <div class="categorias">
-            <img src="images/icons/icon-menu-aves-blue.png" alt="" />
-            <p>AVES</p>
-          </div>
-          <div class="categorias">
-            <img src="images/icons/icon-menu-roedores-blue.png" alt="" />
-            <p>ROEDORES</p>
-          </div>
-          <div class="categorias">
-            <img src="images/icons/icon-menu-peces-blue.png" alt="" />
-            <p>PECES</p>
-          </div>
-          <div class="categorias">
-            <img src="images/icons/icon-menu-ofertas-blue.png" alt="" />
-            <p>OFERTAS</p>
-          </div>
-        </div>
+            <div class="categoriasPopulares">
+              <div class="categorias">
+                <img src="images/icons/icon-menu-perros-blue.png" alt="" />
+                <p>PERROS</p>
+              </div>
+              <div class="categorias">
+                <img src="images/icons/icon-menu-gatos-blue.png" alt="" />
+                <p>GATOS</p>
+              </div>
+              <div class="categorias">
+                <img src="images/icons/icon-menu-aves-blue.png" alt="" />
+                <p>AVES</p>
+              </div>
+              <div class="categorias">
+                <img src="images/icons/icon-menu-roedores-blue.png" alt="" />
+                <p>ROEDORES</p>
+              </div>
+              <div class="categorias">
+                <img src="images/icons/icon-menu-peces-blue.png" alt="" />
+                <p>PECES</p>
+              </div>
+              <div class="categorias">
+                <img src="images/icons/icon-menu-ofertas-blue.png" alt="" />
+                <p>OFERTAS</p>
+              </div>
+            </div>
       </section>
       <br />
       <br />
@@ -216,8 +186,7 @@
         <article>
           <div class="cardArticulo">
             <a href="#">
-              <img src="/images/goldenfish.jpg" title="pez dorado"
-            /></a>
+              <img src="/images/goldenfish.jpg" title="pez dorado" /></a>
             <div class="cardArticulo-body">
               <a href="#">
                 <p class="tituloArticulo">¿Qué pueden comer tus peces?</p>
@@ -233,11 +202,12 @@
         <article>
           <div class="cardArticulo">
             <a href="#">
-              <img src="/images/perroagua.jpg" title="perro bebiendo agua"
-            /></a>
+              <img src="/images/perroagua.jpg" title="perro bebiendo agua" /></a>
             <div class="cardArticulo-body">
               <a href="#">
-                <p class="tituloArticulo">¿Cómo proteger a tu perro del calor?</p>
+                <p class="tituloArticulo">
+                  ¿Cómo proteger a tu perro del calor?
+                </p>
               </a>
               <p class="descripcionArticulo">
                 Nuestros perros pueden sufrir las altas temperaturas. Te
@@ -250,8 +220,7 @@
         <article>
           <div class="cardArticulo">
             <a href="#">
-              <img src="/images/gatoencasa.jpg" title="gato en casa"
-            /></a>
+              <img src="/images/gatoencasa.jpg" title="gato en casa" /></a>
             <div class="cardArticulo-body">
               <a href="#">
                 <p class="tituloArticulo">¿Debería dejar salir a mi gato?</p>
@@ -264,39 +233,34 @@
             </div>
           </div>
         </article>
-      <br>
-      <br>
-      <div class="beneficios2">
-        <div>
-          <span class="material-symbols-outlined">
-            location_on
-            </span>
-            <br>
-            <br>
-          <p>VISITA TU SUCURSAL MÁS CERCANA</p>
-          <P>¡Recuerda que puedes traer a tu mascota!</P>
+      </section>
+        <br />
+        <br />
+        <div class="beneficios2">
+          <div>
+            <span class="material-symbols-outlined"> location_on </span>
+            <br />
+            <br />
+            <p>VISITA TU SUCURSAL MÁS CERCANA</p>
+            <P>¡Recuerda que puedes traer a tu mascota!</P>
+          </div>
+          <div>
+            <span class="material-symbols-outlined"> inventory </span>
+            <br />
+            <br />
+            <p>CONSULTÁ NUESTRO CATÁLOGO</p>
+            <P>Ahorra en cada compra con nuestras ofertas</P>
+          </div>
+          <div>
+            <span class="material-symbols-outlined"> diversity_3 </span>
+            <br />
+            <br />
+            <p>ÚNETE A NUESTRA COMUNIDAD</p>
+            <P>Disfruta de ventajas exclusivas para ti</P>
+          </div>
         </div>
-        <div>
-          <span class="material-symbols-outlined">
-            inventory
-            </span>
-            <br>
-            <br>
-          <p>CONSULTÁ NUESTRO CATÁLOGO</p>
-          <P>Ahorra en cada compra con nuestras ofertas</P>
-        </div>
-        <div>
-          <span class="material-symbols-outlined">
-            diversity_3
-            </span>
-            <br>
-            <br>
-          <p>ÚNETE A NUESTRA COMUNIDAD</p>
-          <P>Disfruta de ventajas exclusivas para ti</P>
-        </div>
-      </div>
-      <br>
-      <br>
+        <br />
+        <br />
       </section>
       <div class="newsletter">
         <p>
@@ -310,11 +274,12 @@
           <button type="submit" value="Submit">Enviar</button>
         </form>
       </div>
-      <br>
-      <br>
+      <br />
+      <br />
     </main>
 
     <!-- Aquí comienza el footer: lista de correo, links de información y redes sociales -->
     <%- include('partials/footer.ejs') %>
-  </body>
+</body>
+
 </html>
