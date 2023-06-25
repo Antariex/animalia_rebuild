@@ -112,7 +112,8 @@
     border-left: 0px;
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
-    margin-left: -4;
+    margin-left: -5;
+    margin-right: 1px;
     font: inherit;
     outline: var(--verde);
     color: var(--verde);
@@ -129,8 +130,8 @@
     color: var(--blanco);
     width: 36px;
     padding: 6px 8px;
-    position: fixed;
-    left: 4px;
+    position: static;
+    left: 4px !important;
     border-radius: 8px;
     border: solid var(--celeste) 1px;
     font-weight: bold;
