@@ -18,7 +18,10 @@
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
   </head>
 
   <body>
@@ -114,45 +117,33 @@
           </div>
         </article>
         <% }) %>
-        <br>
-        <br>
-        <div class="consejo">
-            <div class="consejoRomero">
-                
-                
-                    <h2><span class="material-symbols-outlined">
-                        pets
-                        </span> EL CONSEJO DEL DR. ROMERO</h2>
-                <br>
-                <p>
-                    <script language="javascript">
-                        texto_aleatorio();
-                    
-                        function texto_aleatorio() {
-                            var textos = [
-                                "Respetar e incentivar su descanso de la misma manera que uno tiene su propia rutina, los animales también tienen sus tiempos de descanso. Es importante respetarlos en el espacio de convivencia, y que puedan relajarse y recargar energías para poder seguir jugando.",
-                                "Nunca le cortes el pelo a tu perro, ni siquiera en verano, porque el pelo del perro produce un microclima que permite que el animal pueda soportar mejor las temperaturas del ambiente.",
-                                "Un animal feliz es un animal bien alimentado. Siempre dale alimentos balanceados adquiridos en tu veterinaria de confianza. El mejor alimento no es ni el más barato ni el más caro, sino el que mejor cubre las necesidades de tus mascotas.",
-                                "Mito: La castración engorda. No es así, pero una vez que nuestra mascota haya sido castrada, debemos disminuir su carga calórica, porque hay una mayor tendencia a disminuir su actividad.",
-                                "Los animales establecen con nosotros vínculos afectivos diferenciales. Si los dejamos mucho tiempo solos, eso les puede generar ansiedad (que van a expresar a través de conductas que nos llamarán la atención)."
-                            ];
-                    
-                            var aleat = Math.floor(Math.random() * textos.length);
-                    
-                            if (aleat >= 0 && aleat < textos.length) {
-                                document.write(textos[aleat]);
-                            } else {
-                                document.write("Texto no disponible");
-                            }
-                        }
-                    </script>
-                    
-                    </p>
-            </div>
-            <div class="fotoRomero"><img src="/images/drromero.jpg" /></div>
+        <br />
+        <br />
+        <br />
+        <div class="videoContainer">
+          <iframe
+            width="100%"
+            height="355"
+            src="https://www.youtube.com/embed/wKb3ShuHF7U"
+            title="Video: De gatito a un gato adulto saludable"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+          <div class="videoTexto">
+            <h2>De gatito a un gato adulto saludable</h2>
+            <img src="/images/kitten.png" alt="Gatito" class="gatito" />
+            <br />
+            <p>
+              Durante los primeros meses de vida, tu gatito pasará por una
+              transformación sorprendente. Los alimentos de Royal Canin para
+              gatitos ofrecen una nutrición específica para sus necesidades
+              únicas en este momento vital.
+            </p>
           </div>
-        <br>
-        <br>
+        </div>
+        <br />
+        <br />
         <div>
           <h3 class="titulares">Productos para todas las mascotas</h3>
         </div>
@@ -185,12 +176,133 @@
         </div>
       </section>
       <br />
+      <br />
+      <div class="consejo">
+        <div class="consejoRomero">
+          <h2>
+            <span class="material-symbols-outlined"> pets </span> EL CONSEJO DEL
+            DR. ROMERO
+          </h2>
+          <br />
+          <p>
+            <script language="javascript">
+              texto_aleatorio();
+
+              function texto_aleatorio() {
+                var textos = [
+                  "Respetar e incentivar su descanso de la misma manera que uno tiene su propia rutina, los animales también tienen sus tiempos de descanso. Es importante respetarlos en el espacio de convivencia, y que puedan relajarse y recargar energías para poder seguir jugando.",
+                  "Nunca le cortes el pelo a tu perro, ni siquiera en verano, porque el pelo del perro produce un microclima que permite que el animal pueda soportar mejor las temperaturas del ambiente.",
+                  "Un animal feliz es un animal bien alimentado. Siempre dale alimentos balanceados adquiridos en tu veterinaria de confianza. El mejor alimento no es ni el más barato ni el más caro, sino el que mejor cubre las necesidades de tus mascotas.",
+                  "Mito: La castración engorda. No es así, pero una vez que nuestra mascota haya sido castrada, debemos disminuir su carga calórica, porque hay una mayor tendencia a disminuir su actividad.",
+                  "Los animales establecen con nosotros vínculos afectivos diferenciales. Si los dejamos mucho tiempo solos, eso les puede generar ansiedad (que van a expresar a través de conductas que nos llamarán la atención).",
+                ];
+
+                var aleat = Math.floor(Math.random() * textos.length);
+
+                if (aleat >= 0 && aleat < textos.length) {
+                  document.write(textos[aleat]);
+                } else {
+                  document.write("Texto no disponible");
+                }
+              }
+            </script>
+          </p>
+        </div>
+        <div class="fotoRomero"><img src="/images/drromero.jpg" /></div>
+      </div>
+      <br />
+      <br />
+      <section class="articulos">
+        <article>
+          <div class="cardArticulo">
+            <a href="#">
+              <img src="/images/goldenfish.jpg" title="pez dorado"
+            /></a>
+            <div class="cardArticulo-body">
+              <a href="#">
+                <p class="tituloArticulo">¿Qué pueden comer tus peces?</p>
+              </a>
+              <p class="descripcionArticulo">
+                No todos comen los mismo, así que te contaremos qué alimento es
+                más adecuado para ellos.
+              </p>
+              <a href="#">[ LEER MÁS ]</a>
+            </div>
+          </div>
+        </article>
+        <article>
+          <div class="cardArticulo">
+            <a href="#">
+              <img src="/images/perroagua.jpg" title="perro bebiendo agua"
+            /></a>
+            <div class="cardArticulo-body">
+              <a href="#">
+                <p class="tituloArticulo">¿Cómo proteger a tu perro del calor?</p>
+              </a>
+              <p class="descripcionArticulo">
+                Nuestros perros pueden sufrir las altas temperaturas. Te
+                enseñamos qué hacer en ese caso.
+              </p>
+              <a href="#">[ LEER MÁS ]</a>
+            </div>
+          </div>
+        </article>
+        <article>
+          <div class="cardArticulo">
+            <a href="#">
+              <img src="/images/gatoencasa.jpg" title="gato en casa"
+            /></a>
+            <div class="cardArticulo-body">
+              <a href="#">
+                <p class="tituloArticulo">¿Debería dejar salir a mi gato?</p>
+              </a>
+              <p class="descripcionArticulo">
+                ¿Debería dejar salir a los gatos? Hay mucha controversia sobre
+                el tema, ¿qué sería lo mejor para ellos?
+              </p>
+              <a href="#">[ LEER MÁS ]</a>
+            </div>
+          </div>
+        </article>
+      <br>
+      <br>
+      <div class="beneficios2">
+        <div>
+          <span class="material-symbols-outlined">
+            location_on
+            </span>
+            <br>
+            <br>
+          <p>VISITA TU SUCURSAL MÁS CERCANA</p>
+          <P>¡Recuerda que puedes traer a tu mascota!</P>
+        </div>
+        <div>
+          <span class="material-symbols-outlined">
+            inventory
+            </span>
+            <br>
+            <br>
+          <p>CONSULTÁ NUESTRO CATÁLOGO</p>
+          <P>Ahorra en cada compra con nuestras ofertas</P>
+        </div>
+        <div>
+          <span class="material-symbols-outlined">
+            diversity_3
+            </span>
+            <br>
+            <br>
+          <p>ÚNETE A NUESTRA COMUNIDAD</p>
+          <P>Disfruta de ventajas exclusivas para ti</P>
+        </div>
+      </div>
+      <br>
+      <br>
+      </section>
       <div class="newsletter">
         <p>
           <i class="fa-solid fa-envelope">&nbsp</i>Suscríbite para recibir
           ofertas y novedades:
         </p>
-
         <form action="#" method="GET">
           <input type="text" placeholder="Nombre completo" />
           &nbsp
@@ -198,9 +310,8 @@
           <button type="submit" value="Submit">Enviar</button>
         </form>
       </div>
-
-      <br />
-      <br />
+      <br>
+      <br>
     </main>
 
     <!-- Aquí comienza el footer: lista de correo, links de información y redes sociales -->

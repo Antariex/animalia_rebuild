@@ -350,10 +350,10 @@ article {
 }
 
 .consejo {
-    display: flex;
-    width: 90%;
-    justify-content: center;
-    flex-basis: 50%;
+    display:inline-flex;
+    width: 100%;
+    justify-content: center !important;
+    align-items: center !important;
     text-align: center;
     line-height: 2rem;
     opacity: 0.9;
@@ -364,7 +364,7 @@ article {
     padding: 8px;
     background-image: url("/images/animals-pattern.jpg");
     background-size: cover;
-    margin: 0 auto;
+    margin: 0 auto !important;
 }
 
 .consejoRomero {
@@ -392,6 +392,124 @@ article {
     -o-object-position: center;
     object-position: center;
     display: inline-block;
+}
+
+.videoContainer {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+.video iframe {
+    padding: 20px;
+    width: 100%;
+    height: 715px;
+    margin: 12px auto;
+    display: block;
+}
+
+.videoTexto {
+    background-color: var(--blanco);
+    color: var(--gris);
+    padding: 20px;
+    width: 100%;
+    height: 150px;
+    margin: 12px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.videoTexto h2 {
+    color: var(--rosa);
+}
+
+.videoTexto p {
+    text-align: justify;
+}
+
+.gatito {
+    width: 166px;
+    margin: 0 auto !important;
+}
+
+.cardArticulo {
+    background-color: var(--blanco);
+    display: inline-block;
+    max-width: 350px;
+    margin: 4px 4px;
+    border-radius: 12px;
+    overflow: hidden;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3));
+    margin: 20px;
+}
+
+.cardArticulo:hover {
+    filter: drop-shadow(2px 2px 4px var(--celeste));
+}
+
+.cardArticulo img {
+    width: 100%;
+    height: 200px;
+}
+
+.cardArticulo-body {
+    background-color: var(--blanco);
+    display: inline-block;
+    padding: 20px;
+}
+
+.tituloArticulo {
+    font-size: 16px;
+    color: var(--rosa);
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.tituloArticulo:hover {
+    color: var(--celeste);
+}
+
+.descripcionArticulo {
+    font-size: 16px;
+    display: block;
+    width: 100%;
+    padding: 5px;
+    text-align: justify;
+    line-height: 1.5;
+    margin-bottom: 8px;
+}
+
+
+.cardArticulo-body a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--celeste);
+}
+
+.beneficios2 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    padding: 24px;
+    margin: 0px auto;
+    font-weight: 550;
+    color: var(--gris);
+    background-color: var(--amarillo);
+    max-width: 75%;
+    gap: 1em;
+    border: dashed 1px var(--gris);
+    border-radius: 12px;
+    opacity: 0.7;
+}
+
+.beneficios2 p:nth-child(4) {
+    font-weight: bold;
 }
 
 .newsletter {
