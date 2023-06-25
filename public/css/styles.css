@@ -646,7 +646,24 @@ footer {
 /* mobile */
 
 @media (min-width:320px) and (max-width:374px) {
-        .banner img {
+    .navbarInferior input {
+        display: none;
+    }
+    
+    .navbarInferior span {
+        display: inline-block;
+        background-color: var(--blanco);
+        padding: 12px 10px 12px 12px;
+        border: solid 1px var(--verde);
+        border-radius: 8px;
+        margin-left: -4;
+        font: inherit;
+        outline: var(--verde);
+        color: var(--verde);
+        cursor: pointer;
+    }
+    
+    .banner img {
         display: flex;
         max-width: 100%;
         justify-content: center;
