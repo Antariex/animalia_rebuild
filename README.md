@@ -8,6 +8,7 @@ Visitar sitio: https://animalia-396f.onrender.com/
 1. <a href="#-1-informaci%C3%B3n-general">Información general</a>  
 2. <a href="#%EF%B8%8F-2-elaboraci%C3%B3n-del-sitio">Elaboración del sitio</a>  
 3. <a href="#-3-clonar-animalia-en-tu-pc">Clonar Animalia en tu PC</a>
+4. <a href="#-4-Vistas-del-sitio">Vistas del sitio</a>
   
   ---  
 
@@ -53,4 +54,9 @@ $ nodemon app.js
 ```
 
 Hecho esto, podés abir tu navegador e ingresar a: `http://localhost:3000/` y ya tendrás el sitio corriendo localmente en tu computadora.
+<br>
+<br>
+<h2>👷 4. Vistas del sitio</h2>
+Home:
+![chrome-capture-2023-5-24](https://github.com/Antariex/animalia_rebuild/assets/100479971/565a3d5d-294d-4c50-b3a3-090d97823c38)
 <br>
