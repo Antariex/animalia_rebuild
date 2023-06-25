@@ -124,16 +124,20 @@
 }
 
 .burguer-menu {
-    display: block;
+    display: flex;
     background-color: var(--celeste);
     color: var(--blanco);
-    width: 0 auto;
+    width: 36px;
     padding: 6px 8px;
-    margin: 15px;
+    margin: 0 auto;
+    margin-top: 12px;
+    margin-bottom: 12px;
     border-radius: 8px;
     border: solid var(--celeste) 1px;
     font-weight: bold;
     font-size: 1em;
+    justify-content: left;
+    text-align: left;
 }
 
 /* Estilos para elementos del main */
@@ -144,6 +148,7 @@
     justify-content: center;
     margin: 0 auto;
     padding-top: 3px;
+    margin-top: 8px;
 }
 
 .beneficios {
