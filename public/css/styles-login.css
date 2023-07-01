@@ -24,7 +24,7 @@
     justify-content: space-around;
     align-items: center;
     margin: 0 auto;
-    width: 56%;
+    width: 100%;
 }
 
 .formulario-login a {
@@ -144,12 +144,22 @@
 
 /* mobile */
 
-@media (min-width:320px) and (max-width:767px) {
-    .form {
-        display: flox;
-    }
-    
+@media (min-width:320px) and (max-width:374px) {
     .imagen {
+        display: none;
+    }
+
+    .form img {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .imagen {
+        display: none;
+    }
+
+    .form img {
         display: none;
     }
 }
