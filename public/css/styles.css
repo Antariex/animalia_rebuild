@@ -520,6 +520,8 @@ article {
     max-width: fit-content;
     display: flex;
     flex-wrap: wrap;
+    flex-shrink: no;
+    text-align: center;
     gap: 1em;
     justify-content: space-around;
     font-size: 16px;
