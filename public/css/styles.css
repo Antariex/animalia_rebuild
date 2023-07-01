@@ -645,7 +645,7 @@ footer {
 
 /* mobile */
 
-@media (min-width:320px) and (max-width:374px) {
+@media (min-width:320px) and (max-width:380px) {
     .navbarInferior input {
         display: none;
     }
