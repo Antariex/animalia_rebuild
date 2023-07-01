@@ -1,5 +1,3 @@
-/*Login Maru*/
-
 /* Estilos generales*/
 
 * {
@@ -21,170 +19,137 @@
 
 
 /* Estilos Formularios - Register*/
-
-
-
-.formulario p {
-font-size: 15px;
-};
-
-.links { 
-    text-decoration: none !important;
-    color:red !important;
-};
-
-.formulario h2 {
-    text-align: center;
-    margin: 2px;
-    color: var(--rosa);
-    font-size: 24px;
+.formulario-login {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    width: 56%;
 }
 
-.formulario input {
-    display: inline-block;
-    background-color: var(--blanco);
-    padding: 15px 60px 15px 30px;
-    margin: 9px 9px;
-    border: solid 1.5px var(--verde);
-    border-radius: 20px;
-    font: inherit;
-    text-align: left;
-    
-}
-
-.formulario input:focus {
-    color: var(--gris);
-}
-
-.formulario button {
-    padding: 8px 10px;
-    margin: 8px;
-    background-color: var(--verde);
-    border: 1px solid var(--verde);
-    border-radius: 6px;
-    font-family: 'Roboto', serif;
-    
-}
-
-.formulario button a {
+.formulario-login a {
     text-decoration: none;
-    color: var(--blanco);
+    color: var(--celeste);
 }
 
+.formulario-login hr {
+    width: 96%;
+    margin: 0 auto;
+    color: var(--gris);
+    margin-top: 2px;
+    margin-bottom: 8px;
+}
 
-.formulario h3{
-    text-align: center;
+.input {
+    width: 96%;
+    margin: 8px;
+    background-color: var(--blanco);
+    padding: 12px 10px 12px 12px;
+    border: solid 1px var(--verde);
+    border-radius: 8px;
+    font: inherit;
+    outline: var(--verde);
     color: var(--gris);
 }
 
-.login {
-    text-align: center;
-}
-
-.sendButton:hover {
+.sendButton {
+    width: 96%;
+    padding: 0px 24px;
+    margin: 8px;
     background-color: var(--celeste);
     border: 1px solid var(--celeste);
+    font-family: 'Roboto', serif;
+    font-size: 14px;
+    color: var(--blanco) !important;
+    font-weight: 350;
+    height: 44px;
+    border-radius: 6px;
+    cursor: pointer;
 }
 
-.crearPerfil,
-.irALogin {
-    text-decoration: none;
-    color: #1259c3;
+.contraseña, .spanRegistro {
+    font-size: 14px;
+    align-items: center;
+}
+
+.sendButton a {
+    font-family: 'Roboto', serif;
+    font-size: 14px;
+    color: var(--blanco) !important;
+    font-weight: 350;
+}
+
+.sendButton:hover a {
+    color: var(--amarillo) !important;
+}
+
+.imagen {
+    display: flex;
+    width: fit-content;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 16px;
+    margin: 8px;
+}
+
+.imagen img {
+    height: 540px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: inherit;
+    padding: 20px;
+    margin: 8px;
+}
+
+.registro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: inherit;
+    border: 1px solid var(--gris);
+    border-radius: 2px;
+    padding: 16px;
+    margin: 8px;
+    width: 88%;
+}
+
+.bienvenida {
     font-size: 14px;
     font-weight: bold;
+    font-family: inherit;
+    color: var(--rosa);
 }
 
-/* Estilos footer */
-
-footer {
-    background-color: var(--celeste);
-    color: var(--blanco);
-    font-size: 16px;
-}
-
-.newsletter {
-    display: flex;
-    justify-content: space-around;
-    font-size: 16px;
-    padding: 3px;
-    align-items: center;
-    padding: 3px;
-}
-
-.newsletter input {
-    padding: 6px 8px 7px;
-    font-size: 14px;
-    border: 1px solid var(--blanco);
-    background-color: var(--blanco);
-    color: var(--gris);
-}
-
-.newsletter button {
-    padding: 8px 10px;
-    margin: 8px;
-    background-color: var(--gris);
-    border: 1px solid var(--gris);
-    font-family: 'Roboto', serif;
-    color: var(--blanco);
-}
-
-.newsletter button:hover {
-    color: var(--amarillo)
-}
-
-.enlaces {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.enlaces h4 {
-    
-    text-align: center;
-}
-
-.enlaces a, .legales a {
-    text-decoration: none;
-    color: var(--blanco);
-    margin: 11px;
-    padding: 1px;
-}
-
-.enlaces a:hover, .legales a:hover {
-    color: var(--amarillo);
-}
-
-.enlaces li {
-    padding: 5px;
-    list-style: none;
-    text-align: center;
-}
-
-.legales {
-    text-align: left;
-    padding: 5px;
-}
 
 /* Estilos para diseño adaptativo */
 
 /* mobile */
 
-@media (min-width: 320px) {
-
-}
-
-/* tablet */
-@media (min-width: 768px) {
-}
-
-/* desktop */
-@media (min-width: 1024px) {
-
-    .burguer-menu {
-        display: none;
+@media (min-width:320px) and (max-width:767px) {
+    .form {
+        display: flox;
     }
-
-    .secciones {
-        display: flex;
+    
+    .imagen {
+        display: none;
     }
 }

@@ -112,7 +112,7 @@
     border-left: 0px;
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
-    margin-left: -5;
+    margin-left: -7;
     margin-right: 1px;
     font: inherit;
     outline: var(--verde);
@@ -302,8 +302,8 @@ article {
 .card-body button {
     padding: 0px 24px;
     margin: 8px;
-    background-color: var(--verde);
-    border: 1px solid var(--verde);
+    background-color: var(--celeste);
+    border: 1px solid var(--celeste);
     font-family: 'Roboto', serif;
     font-size: 14px;
     color: var(--blanco);
@@ -314,8 +314,7 @@ article {
 }
 
 .card-body button:hover {
-    background-color: var(--celeste);
-    border: 1px solid var(--celeste);
+    color: var(--amarillo);
 }
 
 .card-body a {

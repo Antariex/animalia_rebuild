@@ -19,42 +19,51 @@
     <!-- Aquí comienza el header: logo, navbars y campo de búsqueda -->
     <%- include('../partials/header.ejs') %>
 
-    <!-- Aquí comienza el main -->
-    <main>
+        <!-- Aquí comienza el main -->
+        <main>
 
-        <div class="formulario login">
+            <div class="formulario-login">
+                <div class="imagen">
+                    <img src="/images/gato-login.jpg" alt="">
+                </div>
+                
+                <div class="formulario">
+                    <br>
+                    <div class="form">
+                        <img src="/images/animalia.jpg" alt="">
+                        <br>
+                    <form action="./users/login" method="POST">
+                        <br>
+                        <input class="input" type="text" name="usuario" placeholder="Usuario o correo electrónico"
+                            required></input>
+                        <input class="input" type="password" name="password" placeholder="Contraseña" required></input>
+                        <!-- Pendiente boton para mostrar contraseña -->
+                        <br>
+                        <button class="sendButton" type="submit"><a href="/">Iniciar sesión</a></button>
+                        <br>
+                        <br>
+                        <hr>
+                        <br>
+                        <p class="bienvenida">LO MEJOR PARA TUS MASCOTAS</p>
+                        <br>
+                        <br>
+                        <a href="#" class="contraseña">¿Olvidaste tu contraseña?</a>
+                    </form>
+                    </div>
+                    
+                    <div class="registro">
+                        <span class="spanRegistro">¿No tienes una cuenta? <a href="/users/register"
+                                class="crearPerfil">Regístrate</a></span>
+                    </div>
+                    <br>
+                    <br>
+                </div>
+            </div>
 
-            <br>
-            <h2 class="titulo">¡Hola! Completá tus datos para ingresar.</h2>
-            <br>
-            <form action="./users/login" method="POST" >
-                <br>
-                <p><input type="text" name="usuario" placeholder="E-mail  o  usuari@" required></input></p>
-                <p><input type="password" name="password" placeholder="Contraseña" required></input></p>
-                <!-- Pendiente boton para mostrar contraseña -->
-                <br>
-                <input type="checkbox" name="datosUsuario">
-                <label>Recordar mis datos</label>
-                <br>
-                <button class="sendButton" type="submit"><a href="/">Enviar</a></button>
-                <br>
-                <br>
-                <p>¿Olvidaste tu contraseña?</p>
-                <a href="#" class="links"> Recuperar contraseña</a>
-            </form>
-            <br>
-            <br>
-            <h3>¿Primera vez en Animalia?</h3>
-            <br>
-            <a href="/users/register" class="crearPerfil">Creá tu cuenta</a>
-            <br>
-            <br>
-        </div>
+        </main>
 
-    </main>
-
-    <!-- Aquí comienza el footer: lista de correo, links de información y redes sociales -->
-    <%- include('../partials/footer.ejs') %>
+        <!-- Aquí comienza el footer: lista de correo, links de información y redes sociales -->
+        <%- include('../partials/footer.ejs') %>
 
 </body>
 
