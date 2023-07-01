@@ -535,6 +535,7 @@ article {
     padding: 7px 16px;
     font-size: 14px;
     border: 1px solid var(--celeste);
+    border-radius: 2px;
     background-color: var(--blanco);
     color: var(--gris);
     max-width: max-content;
@@ -546,6 +547,7 @@ article {
     margin: 8px;
     background-color: var(--celeste);
     border: 1px solid var(--celeste);
+    border-radius: 6px;
     font-family: 'Roboto', serif;
     color: var(--blanco);
 }
