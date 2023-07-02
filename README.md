@@ -16,7 +16,9 @@ Visitar sitio: https://animalia-396f.onrender.com/
 
 <h2>💻 1. Información general</h2>
 
-Proyecto integrador iniciado durante el curso de Desarrollo Web Full Stack de Digital House: https://www.digitalhouse.com/ar/. Luego de algún tiempo de práctica tome esa base inicial para continuar el desarrollo por mi cuenta, modificando vistas, agregando funcionalidades y complejizando el mismo.
+Proyecto integrador iniciado durante el curso de Desarrollo Web Full Stack de Digital House: https://www.digitalhouse.com/ar/.
+
+Luego de algún tiempo de práctica tome esa base inicial para continuar el desarrollo por mi cuenta, modificando vistas, agregando funcionalidades y complejizando el mismo.
 <br>
 <br>
 Animalia es el e-commerce de un petshop orientado a fomentar el cuidado de las mascotas, a brindar servicios y soluciones con foco hacia la atención animal, estimulando la economía digital y de escala solidaria, apoyada en una logística responsable y eficiente.
