@@ -21,7 +21,7 @@
 /* Estilos Formularios - Register*/
 .formulario-login {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     margin: 0 auto;
     width: 100%;
@@ -41,7 +41,7 @@
 }
 
 .input {
-    width: 96%;
+    width: 330px;
     margin: 8px;
     background-color: var(--blanco);
     padding: 12px 10px 12px 12px;
@@ -51,6 +51,44 @@
     outline: var(--verde);
     color: var(--gris);
 }
+
+.input:focus {
+    background-color: lightcyan;
+}
+
+form span.helper-text {
+    display: block;
+    margin-top: 4px;
+    margin-left: 20px;
+    font-size: 12px;
+    line-height: 22px;
+    text-align: left;
+    color: var(--gris);
+  }
+
+  form span.helper-text span.valid {
+    color: var(--verde);
+     text-decoration-line: line-through;
+  }
+
+  form.valid input {
+    border: 1px solid var(--verde);
+  }
+
+  .fa-eye, .fa-eye-slash{
+    margin-top: 24px;
+    margin-left: -36px;
+    position: absolute;
+    cursor: pointer;
+    color: var(--gris);
+    font-size: 16px;
+}
+
+  .helper-text i {
+    width: 20px;
+    color: var(--gris);
+    font-size: 12px;
+    }
 
 .sendButton {
     width: 96%;
@@ -85,7 +123,6 @@
 
 .imagen {
     display: flex;
-    width: fit-content;
     flex-direction: column;
     justify-content: center;
     align-items: center;

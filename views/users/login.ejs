@@ -24,7 +24,7 @@
 
             <div class="formulario-login">
                 <div class="imagen">
-                    <img src="/images/gato-login.jpg" alt="">
+                    <img src="/images/gatoperro-login.jpg" alt="gato">
                 </div>
                 
                 <div class="formulario">
@@ -34,8 +34,19 @@
                         <br>
                         <input class="input" type="text" name="usuario" placeholder="Usuario o correo electrónico"
                             required></input>
-                        <input class="input" type="password" name="password" placeholder="Contraseña" required></input>
-                        <!-- Pendiente boton para mostrar contraseña -->
+                            <br>
+                        <input class="input password" type="password" name="password" placeholder="Contraseña" required>
+                        <span><i class="fa-solid fa-eye-slash toggle-password"></i>
+                        </input>
+                       
+
+                        <span class="helper-text">
+                            <span class="length">- Ocho caracteres.</span><br>
+                            <span class="lowercase">- Una minúscula.</span><br>
+                            <span class="uppercase">- Una mayúscula.</span><br>
+                            <span class="special">- Un número o caracter espercial.</span>
+                          </span>
+
                         <br>
                         <button class="sendButton" type="submit"><a href="/">Iniciar sesión</a></button>
                         <br>
@@ -43,7 +54,6 @@
                         <hr>
                         <br>
                         <p class="bienvenida">LO MEJOR PARA TUS MASCOTAS</p>
-                        <br>
                         <br>
                         <a href="#" class="contraseña">¿Olvidaste tu contraseña?</a>
                     </form>
@@ -63,6 +73,7 @@
         <!-- Aquí comienza el footer: lista de correo, links de información y redes sociales -->
         <%- include('../partials/footer.ejs') %>
 
+        <script src="/javascript/login.js"></script>
 </body>
 
 </html>
