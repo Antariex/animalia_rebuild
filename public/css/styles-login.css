@@ -205,3 +205,10 @@ form span.helper-text {
         display: none;
     }
 }
+
+/* tablet */
+@media (min-width:768px) and (max-width:1023px) {
+    .imagen {
+        display: none !important;
+    }
+}
