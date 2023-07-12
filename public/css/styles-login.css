@@ -182,6 +182,11 @@ form span.helper-text {
 /* mobile */
 
 @media (min-width:320px) and (max-width:374px) {
+    .input {
+        min-width: 318px;
+        max-width: 330px;
+    }
+    
     .imagen {
         display: none;
     }
