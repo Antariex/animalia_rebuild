@@ -33,7 +33,7 @@
 }
 
 .formulario-login hr {
-    width: 96%;
+    width: 95%;
     margin: 0 auto;
     color: var(--gris);
     margin-top: 2px;
@@ -112,6 +112,7 @@ form span.helper-text {
 .contraseña, .spanRegistro {
     font-size: 14px;
     align-items: center;
+    width: 88%;
 }
 
 .sendButton a {
@@ -177,6 +178,7 @@ form span.helper-text {
     font-size: 14px;
     font-weight: bold;
     font-family: inherit;
+    text-align: center;
     color: var(--rosa);
 }
 
@@ -187,26 +189,127 @@ form span.helper-text {
 
 @media (min-width:320px) and (max-width:374px) {
     .input {
-        min-width: 318px;
-        max-width: 330px;
+        width: 304px;
     }
-    
+
+    .sendButton {
+        width: 95%;
+        padding: 0px 24px;
+        margin: 8px;
+        background-color: var(--celeste);
+        border: 1px solid var(--celeste);
+        font-family: 'Roboto', serif;
+        font-size: 14px;
+        color: var(--blanco) !important;
+        font-weight: 350;
+        height: 44px;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+ 
+    .formulario {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0px;
+        width: 100%;
+    }
+
     .imagen {
         display: none;
     }
 
     .form img {
         display: none;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-family: inherit;
+        padding: 20px;
+        margin: 8px;
+        width: 100%;
+    }
+
+    .registro {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-family: inherit;
+        border: 1px solid var(--gris);
+        border-radius: 2px;
+        padding: 16px;
+        margin: 8px;
+        width: 95%;
     }
 }
 
 @media (max-width: 767px) {
+
+    .sendButton {
+        width: 95%;
+        padding: 0px 24px;
+        margin: 8px;
+        background-color: var(--celeste);
+        border: 1px solid var(--celeste);
+        font-family: 'Roboto', serif;
+        font-size: 14px;
+        color: var(--blanco) !important;
+        font-weight: 350;
+        height: 44px;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+ 
+    .formulario {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0px;
+        width: 100%;
+    }
+
     .imagen {
         display: none;
     }
 
     .form img {
         display: none;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-family: inherit;
+        padding: 20px;
+        margin: 8px;
+        width: 100%;
+    }
+
+    .registro {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-family: inherit;
+        border: 1px solid var(--gris);
+        border-radius: 2px;
+        padding: 16px;
+        margin: 8px;
     }
 }
 
