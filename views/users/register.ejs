@@ -23,8 +23,8 @@
         <main>
 
             <div class="formulario-login">
-                <div class="imagen">
-                    <img src="/images/gatoperro-login.jpg" alt="gato">
+                <div class="imagen2">
+                    <img src="/images/gato.jpg" alt="gato">
                 </div>
                 
                 <div class="formulario">
@@ -33,9 +33,20 @@
                     <form action="./users/login" method="POST">
                         <br>
                         <input class="input" type="text" name="usuario" placeholder="Usuario o correo electrónico"
-                            required></input>
+                            required>
+                            <span><i class="fa-solid fa-envelope"></i>
+                        </input>
                             <br>
-                        <input class="input password" type="password" name="password" placeholder="Contraseña" required>
+                            <input class="input" type="text" name="nombre" placeholder="Nombre completo"
+                            required>
+                            <span><i class="fa-solid fa-user"></i>
+                        </input>
+                        <br>
+                        <input class="input password" type="password" name="password" placeholder="Ingresar nueva contraseña" required>
+                        <span><i class="fa-solid fa-eye-slash toggle-password"></i>
+                        </input>
+                        <br>
+                        <input class="input password" type="password" name="password" placeholder="Repetir nueva contraseña" required>
                         <span><i class="fa-solid fa-eye-slash toggle-password"></i>
                         </input>
                        
@@ -46,22 +57,18 @@
                             <span class="uppercase">- Una mayúscula.</span><br>
                             <span class="special">- Un número o caracter espercial.</span>
                           </span>
-
+                          <br>
+                          <p class="condiciones">Al registrarte, aceptas <a href="#">términos y condiciones</a>.</p>
                         <br>
-                        <button class="sendButton" type="submit"><a href="/">Iniciar sesión</a></button>
+                        <button class="sendButton" type="submit"><a href="/">Crear cuenta</a></button>
                         <br>
-                        <br>
-                        <hr>
-                        <br>
-                        <p class="bienvenida">LO MEJOR PARA TUS MASCOTAS</p>
-                        <br>
-                        <a href="#" class="contraseña">¿Olvidaste tu contraseña?</a>
+                        
                     </form>
                     </div>
                     
                     <div class="registro">
-                        <span class="spanRegistro">¿No tienes una cuenta? <a href="/users/register"
-                                class="crearPerfil">Regístrate</a></span>
+                        <span class="spanRegistro">¿Ya tienes una cuenta? <a href="/users/login"
+                                class="crearPerfil">Inicia sesión</a></span>
                     </div>
                     <br>
                     <br>

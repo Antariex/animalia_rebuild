@@ -22,7 +22,7 @@
 .formulario-login {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     margin: 0 auto;
     width: 100%;
 }
@@ -75,11 +75,11 @@ form span.helper-text {
     border: 1px solid var(--verde);
   }
 
-  .fa-envelope {
+  .fa-envelope, .fa-user {
     cursor: default !important;
   }
 
-  .fa-eye, .fa-eye-slash, .fa-envelope {
+  .fa-eye, .fa-eye-slash, .fa-envelope, .fa-user {
     margin-top: 24px;
     margin-left: -36px;
     position: absolute;
@@ -115,6 +115,13 @@ form span.helper-text {
     width: 88%;
 }
 
+p.condiciones {
+    font-size: 14px;
+    text-align: center !important;
+    width: 100%;
+    font-weight: bold;
+    }
+
 .sendButton a {
     font-family: 'Roboto', serif;
     font-size: 14px;
@@ -130,7 +137,7 @@ form span.helper-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     text-align: center;
     padding: 16px;
     margin: 8px;
@@ -138,6 +145,10 @@ form span.helper-text {
 
 .imagen img {
     height: 540px;
+}
+
+.imagen2 img {
+    height: 500px;
 }
 
 .formulario {
@@ -171,7 +182,7 @@ form span.helper-text {
     border-radius: 2px;
     padding: 16px;
     margin: 8px;
-    width: 88%;
+    width: 86%;
 }
 
 .bienvenida {
@@ -221,6 +232,10 @@ form span.helper-text {
         display: none;
     }
 
+    .imagen2 {
+        display: none;
+    }
+
     .form img {
         display: none;
     }
@@ -248,7 +263,6 @@ form span.helper-text {
         border-radius: 2px;
         padding: 16px;
         margin: 8px;
-        width: 95%;
     }
 }
 
@@ -283,6 +297,10 @@ form span.helper-text {
         display: none;
     }
 
+    .imagen2 {
+        display: none;
+    }
+
     .form img {
         display: none;
     }
@@ -310,6 +328,8 @@ form span.helper-text {
         border-radius: 2px;
         padding: 16px;
         margin: 8px;
+        min-width: 306px;
+        max-width: 326px;
     }
 }
 
@@ -317,5 +337,23 @@ form span.helper-text {
 @media (min-width:768px) and (max-width:1023px) {
     .imagen {
         display: none !important;
+    }
+
+    .imagen2 {
+        display: none;
+    }
+
+    .registro {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-family: inherit;
+        border: 1px solid var(--gris);
+        border-radius: 2px;
+        padding: 16px;
+        margin: 8px;
+        width: 329px;
     }
 }
