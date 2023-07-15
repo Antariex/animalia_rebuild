@@ -61,7 +61,8 @@ Hecho esto, podés abir tu navegador e ingresar a: `http://localhost:3000/` y ya
 <h2>👀 4. Vistas del sitio</h2>
 
 Home:
-![home](https://github.com/Antariex/animalia_rebuild/assets/100479971/8f2bade2-a50b-4905-8b02-5bd9a4eea343)
+![home](https://github.com/Antariex/animalia_rebuild/assets/100479971/4d79fec8-98b8-4c5b-894e-1ac91e88f88d)
 
 Login:
-![login](https://github.com/Antariex/animalia_rebuild/assets/100479971/3cecfada-8e0f-4275-8f6a-5e5dbd5db6c5)
+![login](https://github.com/Antariex/animalia_rebuild/assets/100479971/321172cf-f901-4568-a73b-7475aa81d036)
+
