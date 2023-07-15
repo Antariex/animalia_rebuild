@@ -31,7 +31,13 @@ El público objetivo son los amantes de las mascotas, cuidadores, entrenadores d
 <br>
 <h2>🛠️ 2. Elaboración del sitio</h2>  
   
-El website de Animalia fue desarrollado utilizando HTML5, CSS y JavaScript. Para la construcción y el diseño se utilizaron como referencias las siguientes webs:
+El website de Animalia fue desarrollado utilizando las siguientes herramientas:
+- Lenguajes de programación: HTML5, CSS3, JavaScript
+- Frameworks: Node JS, Express JS, Tailwind CSS
+- Sistema de control de versiones: Git
+- Sistema de gestión de paquetes: npm
+<br>
+Para el diseño se utilizaron como referencias las siguientes webs:
 - www.veterinariasebastian.com  
 - www.petsmart.com  
 - www.miamipetconcierge.com  
