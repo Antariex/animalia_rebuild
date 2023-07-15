@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/css/styles-login.css" rel="stylesheet">
+    <link href="/css/styles-login-register.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="icon" href="/images/icon.png">
     <title>Ingreso - Animalia</title>
@@ -33,19 +33,13 @@
                     <form action="./users/login" method="POST">
                         <br>
                         <input class="input" type="text" name="usuario" placeholder="Usuario o correo electrónico"
-                            required></input>
+                            required>
+                            <span><i class="fa-solid fa-envelope"></i>
+                        </input>
                             <br>
                         <input class="input password" type="password" name="password" placeholder="Contraseña" required>
                         <span><i class="fa-solid fa-eye-slash toggle-password"></i>
                         </input>
-                       
-
-                        <span class="helper-text">
-                            <span class="length">- Ocho caracteres.</span><br>
-                            <span class="lowercase">- Una minúscula.</span><br>
-                            <span class="uppercase">- Una mayúscula.</span><br>
-                            <span class="special">- Un número o caracter espercial.</span>
-                          </span>
 
                         <br>
                         <button class="sendButton" type="submit"><a href="/">Iniciar sesión</a></button>
@@ -73,7 +67,7 @@
         <!-- Aquí comienza el footer: lista de correo, links de información y redes sociales -->
         <%- include('../partials/footer.ejs') %>
 
-        <script src="/javascript/login.js"></script>
+        <script src="/javascript/signup.js"></script>
 </body>
 
 </html>

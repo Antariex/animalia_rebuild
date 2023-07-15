@@ -75,7 +75,11 @@ form span.helper-text {
     border: 1px solid var(--verde);
   }
 
-  .fa-eye, .fa-eye-slash{
+  .fa-envelope {
+    cursor: default !important;
+  }
+
+  .fa-eye, .fa-eye-slash, .fa-envelope {
     margin-top: 24px;
     margin-left: -36px;
     position: absolute;
