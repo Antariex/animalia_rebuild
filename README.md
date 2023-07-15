@@ -64,5 +64,7 @@ Home:
 ![home](https://github.com/Antariex/animalia_rebuild/assets/100479971/4d79fec8-98b8-4c5b-894e-1ac91e88f88d)
 
 Login:
-![login](https://github.com/Antariex/animalia_rebuild/assets/100479971/321172cf-f901-4568-a73b-7475aa81d036)
+![login](https://github.com/Antariex/animalia_rebuild/assets/100479971/4df9f480-a0e1-47b2-a6c2-4739736c7995)
 
+Signup:
+![signup](https://github.com/Antariex/animalia_rebuild/assets/100479971/7a90fd90-c11e-450a-b592-82a275250ab0)
