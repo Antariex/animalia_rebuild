@@ -73,10 +73,10 @@
   toggleBtn.addEventListener("click", function () {
     if (password.type === "password") {
       password.type = "text";
-      toggleBtn.className = "fa-solid fa-eye"; 
+      toggleBtn.className = "fa-solid fa-eye-slash"; 
     } else {
       password.type = "password";
-      toggleBtn.className = "fa-solid fa-eye-slash";
+      toggleBtn.className = "fa-solid fa-eye";
     }
   });
 
