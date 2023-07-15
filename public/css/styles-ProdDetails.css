@@ -28,23 +28,16 @@
 .container {
     display: grid;
     width: 98%;
-    grid-template-columns: repeat(1, 1fr)
+    grid-template-columns: repeat(1, 1fr);
 }
 
-.detail_prod__imag {
-    /*contiene tamaño imagen*/
-    max-width: 460px;
-    max-height: 460px;
+img.detail_prod__img {
+    height: 422px;
+}
+
+.detail_prod__img {
     padding: 15px 0;
-    transition: all 300ms;
     position: relative;
-    cursor: -webkit-zoom-in;
-   cursor: zoom-in;
-}
-
-.detail_prod__imag:hover{
-transform: scale(1.25);
-cursor: zoom;
 }
 
 .precio {
@@ -63,13 +56,12 @@ cursor: zoom;
 }
 
 .cuadro {
-    justify-content: left;
-    ;
+    justify-content: center;
     background-color: #edf2f6;
     border-radius: 12px;
-    min-width: 320px;
+    min-width: 300px;
     max-width: 375px;
-    padding: 11px 22px;
+    padding: 16px 26px;
     margin: 0 auto;
     margin-bottom: 10px;
 }
@@ -96,14 +88,18 @@ select {
 .titulodescripcion {
     border: solid 1px var(--gris);
     border-top: solid 4px var(--celeste);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
     border-bottom: 0px;
     padding: 0px 50px;
-    line-height: 60px;
+    line-height: 50px;
     width: max-content;
 }
 
 .descripciones {
-    padding: 50px;
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+    padding: 44px;
     margin: 10px;
     text-align: justify;
     font-size: 1.5rem;
@@ -116,29 +112,30 @@ select {
 }
 
 .button {
-    padding: 8px 40px;
-    margin: -1px 0 10px 0;
-    background-color: var(--verde);
-    border: 1px solid var(--verde);
-    border-radius: 5px;
-    width: 310px;
-    height: 55px;
-    font-family: 'Roboto', serif;
-}
-
-button a {
-    text-decoration: none !important;
-    color: var(--blanco) !important;
-    font-size: 18px;
-    text-align: center;
-    font-weight: 550;
-    line-height: 40px;
-}
-
-.button:hover {
+    padding: 0px 24px;
+    margin: 8px;
     background-color: var(--celeste);
     border: 1px solid var(--celeste);
+    font-family: 'Roboto', serif;
+    font-size: 14px;
+    color: var(--blanco);
+    font-weight: 350;
+    height: 44px;
+    border-radius: 6px;
     cursor: pointer;
+    width: 58%;
+}
+
+.button a {
+    font-family: 'Roboto', serif;
+    font-size: 14px;
+    color: var(--blanco) !important;
+    font-weight: 350;
+    text-decoration: none;
+}
+
+.button:hover a {
+    color: var(--amarillo) !important;
 }
 
 
@@ -146,7 +143,16 @@ button a {
 
 /* mobile */
 
-@media (min-width: 320px) {}
+@media (min-width:320px) and (max-width:420px) {
+    .listadebeneficios {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    img.detail_prod__img {
+        max-height: 320px;
+    }
+}
 
 /* tablet y desktop */
 @media (min-width: 768px) {
