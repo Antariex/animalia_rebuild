@@ -31,11 +31,18 @@ El público objetivo son los amantes de las mascotas, cuidadores, entrenadores d
 <br>
 <h2>🛠️ 2. Elaboración del sitio</h2>  
   
-El website de Animalia fue desarrollado utilizando HTML5, CSS y JavaScript. Para la construcción y el diseño se utilizaron como referencias las siguientes webs:
-- www.veterinariasebastian.com  
-- www.petsmart.com  
-- www.miamipetconcierge.com  
-- www.kiwoko.com  
+El website de Animalia fue desarrollado utilizando las siguientes herramientas:<br>
+- **Lenguajes de programación:** HTML5, CSS3, JavaScript<br>
+- **Frameworks:** Node JS, Express JS, Tailwind CSS<br>
+- **Sistema de control de versiones:** Git<br>
+- **Sistema de gestión de paquetes:** npm
+
+<br>
+Para el diseño se utilizaron como referencias las siguientes webs:<br>
+- www.veterinariasebastian.com<br>  
+- www.petsmart.com<br>  
+- www.miamipetconcierge.com<br>  
+- www.kiwoko.com<br>  
 - www.natural-life.com.ar
 <br>
 <br>
@@ -61,7 +68,7 @@ Hecho esto, podés abir tu navegador e ingresar a: `http://localhost:3000/` y ya
 <h2>👀 4. Vistas del sitio</h2>
 
 Home:
-![home](https://github.com/Antariex/animalia_rebuild/assets/100479971/4d79fec8-98b8-4c5b-894e-1ac91e88f88d)
+![home](https://github.com/Antariex/animalia_rebuild/assets/100479971/45b32ab5-22a5-4cd1-9b35-a408085a81e3)
 
 Login:
 ![login](https://github.com/Antariex/animalia_rebuild/assets/100479971/4df9f480-a0e1-47b2-a6c2-4739736c7995)
