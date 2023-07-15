@@ -36,13 +36,13 @@ El website de Animalia fue desarrollado utilizando las siguientes herramientas:<
 - **Frameworks:** Node JS, Express JS, Tailwind CSS<br>
 - **Sistema de control de versiones:** Git<br>
 - **Sistema de gestión de paquetes:** npm
+
 <br>
-<br>
-Para el diseño se utilizaron como referencias las siguientes webs:
-- www.veterinariasebastian.com  
-- www.petsmart.com  
-- www.miamipetconcierge.com  
-- www.kiwoko.com  
+Para el diseño se utilizaron como referencias las siguientes webs:<br>
+- www.veterinariasebastian.com<br>  
+- www.petsmart.com<br>  
+- www.miamipetconcierge.com<br>  
+- www.kiwoko.com<br>  
 - www.natural-life.com.ar
 <br>
 <br>
