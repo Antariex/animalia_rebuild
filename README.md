@@ -74,7 +74,7 @@ Login:
 ![login](https://github.com/Antariex/animalia_rebuild/assets/100479971/4df9f480-a0e1-47b2-a6c2-4739736c7995)
 
 Signup:
-![signup](https://github.com/Antariex/animalia_rebuild/assets/100479971/7a90fd90-c11e-450a-b592-82a275250ab0)
+![signup](https://github.com/Antariex/animalia_rebuild/assets/100479971/476d875b-89ee-4774-958b-6eefee38aba7)
 
 Product detail:
 ![product detail](https://github.com/Antariex/animalia_rebuild/assets/100479971/8a2b9960-fb9c-4351-bab1-91fbdb845f0d)
