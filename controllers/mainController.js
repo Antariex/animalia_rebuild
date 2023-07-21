@@ -9,6 +9,26 @@ const mainController = {
 
     home: (req, res, next) => {
         res.render('index', {products});
+    },
+
+    aboutUs: (req, res) => {
+        res.render('./aboutUs'); 
+    },
+
+    sucursales: (req, res) => {
+        res.render('./sucursales');
+    },
+
+    pagos: (req, res) => {
+        res.render('./pagos');
+    },
+
+    envios: (req, res) => {
+        res.render('./envios');
+    },
+
+    preguntas: (req, res) => {
+        res.render('./preguntas');
     }
 };
 

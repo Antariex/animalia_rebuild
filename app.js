@@ -14,8 +14,8 @@ app.listen(process.env.PORT || 3000, function() {
     console.log('http://localhost:3000')
 });
 
-//Middlewares - Disponibilidad de la carpeta public
-app.use(express.static(path.resolve(__dirname, 'public')))
+//Middlewares: Disponibilidad de la carpeta public y vista 404
+app.use(express.static(path.resolve(__dirname, 'public')));
 
 //Procesamiento de formularios
 app.use(express.urlencoded( {extended: false} ));
@@ -28,10 +28,13 @@ app.use(cookieParser());
 // Motor de vistas
 app.set("view engine", "ejs");
 
-
 //Enrutador principal (http://localhost:3000/)
 app.use(mainRouter);
 
+//404
+app.use((req, res, next) => {
+    res.status(404).render('error', { message: 'Page not found' });
+  });
+  
 // Exportar app
 module.exports = app;
-
