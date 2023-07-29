@@ -33,7 +33,7 @@ El público objetivo son los amantes de las mascotas, cuidadores, entrenadores d
   
 El website de Animalia fue desarrollado utilizando las siguientes herramientas:<br>
 - **Lenguajes de programación:** HTML5, CSS3, JavaScript<br>
-- **Frameworks:** Node JS, Express JS, Bootstrap<br>
+- **Frameworks:** Node JS, Express JS, TaildwindCSS<br>
 - **Sistema de control de versiones:** Git<br>
 - **Sistema de gestión de paquetes:** npm
 
