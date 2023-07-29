@@ -10,13 +10,61 @@
     --negro: #000;
 }
 
+html {
+    height: 100vh !important;
+}
+
 body {
     box-sizing: border-box;
-    margin: 0;
+    margin: 16px;
     padding: 0;
-    font-family: 'Roboto', serif;
-    background-image: url("/images/stayPawsitive.jpg");
-    background-size: 100vw 100vh;
-    background-repeat: no-repeat;
+    padding-bottom: 4px;
+    font-family: 'Roboto', serif !important;
+    background-color: var(--blanco);
     text-align: center;
-};
+    border-radius: 24px;
+}
+
+.titulo {
+    color: var(--celeste) !important;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.subtitulo {
+    color: var(--gris) !important;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.button {
+    padding: 0px 24px !important;
+    margin: 8px !important;
+    background-color: var(--celeste) !important;
+    border: 1px solid var(--celeste) !important;
+    font-family: 'Roboto', serif !important;
+    font-size: 14px !important;
+    color: var(--blanco) !important;
+    font-weight: 350 !important;
+    height: 44px !important;
+    border-radius: 6px !important;
+    cursor: pointer !important;
+    width: 158px !important;
+}
+
+.button a {
+    font-family: 'Roboto', serif;
+    font-size: 14px;
+    color: var(--blanco) !important;
+    font-weight: 350;
+    text-decoration: none;
+}
+
+.button:hover a {
+    color: var(--amarillo) !important;
+}
+
+img {
+    margin: 0 auto !important;
+}

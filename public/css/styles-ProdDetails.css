@@ -17,12 +17,10 @@
     --negro: #000;
 }
 
-/*Estilos main pag Prod Details MARIANO*/
-
 .titulares {
-    color: var(--rosa);
-    font-size: 24px;
-    text-align: center;
+    color: var(--rosa) !important;
+    font-size: 24px !important;
+    text-align: center !important;
 }
 
 .container {
@@ -32,98 +30,110 @@
 }
 
 img.detail_prod__img {
-    height: 422px;
+    height: 422px !important;
+    margin: 0 auto;
 }
 
 .detail_prod__img {
-    padding: 15px 0;
-    position: relative;
+    padding: 15px 0 !important;
+    position: relative !important;
 }
 
 .precio {
-    font-size: 25px;
-    font-weight: bold;
-    margin-top: 6px;
-    font-style: normal;
-    color: var(--negro);
-    text-decoration: line-through;
+    font-size: 25px !important;
+    font-weight: bold !important;
+    margin-top: 6px !important;
+    font-style: normal !important;
+    color: var(--negro) !important;
+    text-decoration: line-through !important;
 }
 
 .descuento {
-    font-size: 30px;
-    font-weight: 700;
-    color: #135191;
+    font-size: 30px !important;
+    font-weight: 700 !important;
+    color: #135191 !important;
 }
 
 .cuadro {
-    justify-content: center;
-    background-color: #edf2f6;
-    border-radius: 12px;
-    min-width: 300px;
-    max-width: 375px;
-    padding: 16px 26px;
-    margin: 0 auto;
-    margin-bottom: 10px;
+    justify-content: center !important;
+    background-color: #edf2f6 !important;
+    border-radius: 12px !important;
+    min-width: 300px !important;
+    max-width: 375px !important;
+    padding: 16px 26px !important;
+    margin: 0 auto !important;
+    margin-bottom: 10px !important;
+    display: inline-block !important;
 }
 
 select {
-    width: 95px;
-    height: 37px;
-    border-color: var(--celeste);
-    outline: var(--celeste);
-    border-style: solid;
-    border-width: 1px 0 1px 0;
-    border-radius: 0;
-    margin-top: 10px;
+    width: 58% !important;
+    height: 50px !important;
+    border-color: var(--celeste) !important;
+    outline: var(--celeste) !important;
+    border-style: solid !important;
+    border-width: 1px 0 1px 0 !important;
+    border-radius: 0 !important;
+    margin-top: 10px !important;
 }
 
 .listadebeneficios {
-    font-size: 14px;
-    margin-top: 6px;
-    margin-bottom: 0;
-    color: var(--gris);
-    line-height: 18px;
+    font-size: 14px !important;
+    margin-top: 6px !important;
+    margin-bottom: 0 !important;
+    color: var(--gris) !important;
+    line-height: 18px !important;
+}
+
+form img, .listadebeneficios img {
+    display: inline-block !important;
+}
+
+.listadebeneficios h4 {
+    font-weight: bold !important;
 }
 
 .titulodescripcion {
-    border: solid 1px var(--gris);
-    border-top: solid 4px var(--celeste);
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    border-bottom: 0px;
-    padding: 0px 50px;
-    line-height: 50px;
-    width: max-content;
+    border: solid 1px var(--gris) !important;
+    border-top: solid 4px var(--celeste) !important;
+    border-top-left-radius: 8px !important;
+    border-top-right-radius: 8px !important;
+    border-bottom: 0px !important;
+    padding: 0px 50px !important;
+    line-height: 50px !important;
+    width: max-content !important;
+    font-weight: bold !important;
+    font-size: 1.3rem;
 }
 
 .descripciones {
     padding-top: 20px !important;
     padding-bottom: 20px !important;
-    padding: 44px;
-    margin: 10px;
-    text-align: justify;
-    font-size: 1.5rem;
-    color: var(--gris);
+    padding: 44px !important;
+    margin: 10px !important;
+    text-align: justify !important;
+    font-size: 1.3rem !important;
+    color: var(--gris) !important;
 }
 
 .titulo {
-    color: var(--rosa);
-    font-size: 28px;
+    color: var(--rosa) !important;
+    font-size: 28px !important;
 }
 
 .button {
-    padding: 0px 24px;
-    margin: 8px;
-    background-color: var(--celeste);
-    border: 1px solid var(--celeste);
-    font-family: 'Roboto', serif;
-    font-size: 14px;
-    color: var(--blanco);
-    font-weight: 350;
-    height: 44px;
-    border-radius: 6px;
-    cursor: pointer;
-    width: 58%;
+    padding: 0px 24px !important;
+    margin: 8px !important;
+    background-color: var(--celeste) !important;
+    border: 1px solid var(--celeste) !important;
+    font-family: 'Roboto', serif !important;
+    font-size: 14px !important;
+    color: var(--blanco) !important;
+    font-weight: 350 !important;
+    height: 44px !important;
+    border-radius: 6px !important;
+    cursor: pointer !important;
+    width: 58% !important;
 }
 
 .button a {
