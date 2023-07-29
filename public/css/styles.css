@@ -29,7 +29,6 @@
     color: var(--blanco);
     width: 100%;
     flex-wrap: nowrap;
-    padding: 1px;
 }
 
 .navbarSuperior a {
@@ -46,36 +45,12 @@
 
 .navbarInferior {
     background-color: var(--blanco) !important;
-    width: 100% !important;
-    display: flex !important;
-    box-sizing: border-box !important;
-    justify-content: space-around !important;
-    align-items: center !important;
-    flex-wrap: wrap !important;
+    width: max-content;
 }
 
 .logo img {
     max-width: 130px;
     display: flex;
-}
-
-.secciones {
-    display: none;
-}
-
-.secciones img:hover {
-    transition: 0.5s;
-    transform: rotate(360deg);
-}
-
-.secciones ul {
-    display: flex;
-    list-style: none;
-}
-
-.secciones li {
-    margin: 4px 6px;
-    padding: 4px;
 }
 
 .navbarInferior a {
@@ -84,61 +59,32 @@
     padding: 4px 6px;
     margin: 4px;
     font-size: 18px;
+    width: max-content;
 }
 
 .navbarInferior a:hover {
     color: var(--celeste);
 }
 
-.navbarInferior input {
-    display: inline-block;
-    background-color: var(--blanco);
-    padding: 12px 10px 12px 12px;
-    border: solid 1px var(--verde);
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
-    border-right: 0px;
-    margin-right: -4px;
-    font: inherit;
-    outline: var(--verde);
-    color: var(--gris);
+.navbarInferior img {
+    text-align: center !important;
 }
 
-.navbarInferior span {
-    display: inline-block;
-    background-color: var(--blanco);
-    padding: 12px 10px 12px 12px;
-    border: solid 1px var(--verde);
-    border-left: 0px;
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
-    margin-left: -7;
-    margin-right: 1px;
-    font: inherit;
-    outline: var(--verde);
-    color: var(--verde);
-    cursor: pointer;
+.secciones img:hover {
+    transition: 0.5s;
+    transform: rotate(360deg);
 }
 
-.fa-magnifying-glass {
-    color: var(--verde);
+.secciones li {
+    margin: 4px 6px;
+    padding: 4px;
+    width: 100% !important;
 }
 
-.burguer-menu {
-    display: flex;
-    background-color: var(--celeste);
-    color: var(--blanco);
-    width: 36px;
-    padding: 6px 8px;
-    position: absolute;
-    left: 4px !important;
-    border-radius: 8px;
-    border: solid var(--celeste) 1px;
-    font-weight: bold;
-    font-size: 1em;
-    justify-content: left;
-    text-align: left;
+.secciones li img {
+    display: inline-flex;
 }
+
 
 /* Estilos para elementos del main */
 
@@ -164,69 +110,8 @@
     gap: 1em;
 }
 
-.slide {
-    position: relative;
-    margin-top: 0;
-}
-
-.slide-inner {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    height: auto;
-}
-
-.slide-open:checked+.slide-item {
-    position: static;
-    opacity: 100;
-}
-
-.slide-item {
-    position: absolute;
-    opacity: 0;
-}
-
-.slide-item img {
-    display: block;
-    max-height: 290px;
-    max-width: 100%;
-    margin: 0 auto;
-    margin-top: 8px;
-}
-
-.slide-control {
-    background: var(--celeste);
-    border-radius: 50%;
-    color: var(--blanco);
-    cursor: pointer;
-    display: none;
-    font-size: 30px;
-    height: 25px;
-    line-height: 20px;
-    position: absolute;
-    top: 25%;
-    text-align: center;
-    width: 25px;
-    z-index: 10;
-}
-
-.slide-control.prev {
-    left: 1%;
-}
-
-.slide-control.next {
-    right: 1%;
-}
-
-.slide-control:hover {
-    background: var(--celeste);
-    color: var(--amarillo);
-}
-
-#slide-1:checked~.control-1,
-#slide-2:checked~.control-2,
-#slide-3:checked~.control-3 {
-    display: block;
+.beneficios img {
+    display: inline-block;
 }
 
 section {
@@ -238,6 +123,8 @@ section {
 .titulares {
     color: var(--rosa);
     padding-bottom: 15px;
+    font-size: larger;
+    font-weight: 800;
 }
 
 article {
@@ -345,6 +232,7 @@ article {
 .categorias img {
     width: 55px;
     height: 55px;
+    display: inline-block;
 }
 
 .categorias:hover {
@@ -534,6 +422,7 @@ article {
 .newsletter input {
     padding: 7px 16px;
     font-size: 14px;
+    font-weight: 350;
     border: 1px solid var(--celeste);
     border-radius: 2px;
     background-color: var(--blanco);
@@ -543,12 +432,13 @@ article {
 }
 
 .newsletter button {
-    padding: 8px 10px;
+    padding: 7px 12px;
     margin: 8px;
     background-color: var(--celeste);
     border: 1px solid var(--celeste);
     border-radius: 6px;
     font-family: 'Roboto', serif;
+    font-weight: 500;
     color: var(--blanco);
 }
 
@@ -574,10 +464,12 @@ footer {
 .contacto,
 .ayuda, .nosotros {
     text-align: left;
+    font-weight: bold;
 }
 
 .redes {
     text-align: center !important;
+    font-weight: bold
 }
 
 .enlaces {
@@ -595,6 +487,7 @@ footer {
 .legales a {
     text-decoration: none;
     color: var(--blanco);
+    font-weight: 350;
 }
 
 .enlaces a:hover,
@@ -674,9 +567,17 @@ footer {
         padding-top: 3px;
         margin-top: 8px;
     }
+
+    .h-56, .path {
+        height: 5rem;
+    }
 }
 
 @media (max-width: 767px) {
+    .h-56 {
+        height: 6rem;
+    }
+    
     .consejo {
         display: flex;
         flex-wrap: wrap;
@@ -693,7 +594,7 @@ footer {
     }
 
     .tituloCategorias {
-        display: block;
+        display: inline-block;
     }
 
     .categoriasPopulares {
