@@ -68,17 +68,19 @@ Hecho esto, podés abir tu navegador e ingresar a: `http://localhost:3000/` y ya
 <h2>👀 4. Vistas del sitio</h2>
 
 Home:
-![home](https://github.com/Antariex/animalia_rebuild/assets/100479971/45b32ab5-22a5-4cd1-9b35-a408085a81e3)
+![home](https://github.com/Antariex/animalia_rebuild/assets/100479971/ff1ca304-aadd-45ee-a5ce-ad894e0c399d)
 
 Login:
-![login](https://github.com/Antariex/animalia_rebuild/assets/100479971/4df9f480-a0e1-47b2-a6c2-4739736c7995)
+![login](https://github.com/Antariex/animalia_rebuild/assets/100479971/5ffafaaa-7bd2-41db-bc0c-fe0ffb6e9098)
 
 Signup:
-![signup](https://github.com/Antariex/animalia_rebuild/assets/100479971/24fff803-6e5e-4380-96cd-16b9c4301643)
+![signup](https://github.com/Antariex/animalia_rebuild/assets/100479971/35e42cb8-e3a7-43ef-8b21-d08e41eefc1e)
 
 Product detail:
-![product detail](https://github.com/Antariex/animalia_rebuild/assets/100479971/8a2b9960-fb9c-4351-bab1-91fbdb845f0d)
+![product detail](https://github.com/Antariex/animalia_rebuild/assets/100479971/a0f077ff-140e-44e0-87eb-6437656addab)
 
 Shopping cart (mock up):
-![cart](https://github.com/Antariex/animalia_rebuild/assets/100479971/33393058-9767-496e-943c-7821a2afcd5f)
+![cart](https://github.com/Antariex/animalia_rebuild/assets/100479971/4e98fd34-472d-44e9-b062-bc41970e4b77)
 
+404 page:
+![eror404](https://github.com/Antariex/animalia_rebuild/assets/100479971/a8a94a5d-0193-4ddf-b184-8ec06437b4c9)
