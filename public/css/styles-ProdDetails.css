@@ -104,6 +104,7 @@ form img, .listadebeneficios img {
     width: max-content !important;
     font-weight: bold !important;
     font-size: 1.3rem;
+    text-transform: uppercase;
 }
 
 .descripciones {
