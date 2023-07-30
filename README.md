@@ -77,7 +77,7 @@ Signup:
 ![signup](https://github.com/Antariex/animalia_rebuild/assets/100479971/35e42cb8-e3a7-43ef-8b21-d08e41eefc1e)
 
 Product detail:
-![product detail](https://github.com/Antariex/animalia_rebuild/assets/100479971/a0f077ff-140e-44e0-87eb-6437656addab)
+![product detail](https://github.com/Antariex/animalia_rebuild/assets/100479971/8e003196-714b-4fd7-b402-2bb25cb5e16c)
 
 Shopping cart (mock up):
 ![cart](https://github.com/Antariex/animalia_rebuild/assets/100479971/4e98fd34-472d-44e9-b062-bc41970e4b77)
